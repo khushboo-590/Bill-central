@@ -1,0 +1,163 @@
+import card1 from '../assets/images/png/card1.png';
+import card2 from '../assets/images/png/card2.png';
+import card3 from '../assets/images/png/card3.png';
+import card4 from '../assets/images/png/crad4.png';
+import slide1 from '../assets/images/png/silde1.png';
+import slide2 from '../assets/images/png/slide2.png';
+import slide3 from '../assets/images/png/slide-3.png';
+import slide4 from '../assets/images/png/silde4.png';
+import slide5 from '../assets/images/png/silde5.png';
+import slide6 from '../assets/images/png/silde6.png';
+import circle from '../assets/images/png/circle.png';
+import clock from '../assets/images/png/clock.png';
+import noServices from '../assets/images/png/no-services.png';
+import headphone from '../assets/images/png/headphone.png';
+import man from '../assets/images/png/man.png';
+import man1 from '../assets/images/png/girl1.png';
+import man2 from '../assets/images/png/man1.png';
+import groupStar from '../assets/images/png/star.png';
+
+
+
+
+export const cardLIST = [
+    {
+        img: card1,
+        alt: 'step-location',
+        imgHeading: '1. Enter Your Location and Preferences',
+        title: '1. Your Location',
+        description: 'Enter your location and preferences to find the best energy, gas, and internet plans for you.'
+    },
+    {
+        img: card2,
+        alt: 'step-compare',
+        imgHeading: '2. Compare Providers',
+        title: '2. Compare',
+        description: 'Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum'
+    },
+    {
+        img: card3,
+        alt: 'step-switch-easily',
+        imgHeading: '3. Switch Easily',
+        title: '3. Switch Easily',
+        description: 'Complete the process in just a few clicks. We’ll handle the rest and ensure a smooth transition to your new provider.'
+    },
+    {
+        img: card4,
+        alt: 'step-best-plan',
+        imgHeading: '4. Choose the Best Plan',
+        title: '4. Best Plan',
+        description: 'Enter your location and preferences to find the best energy, gas, and internet plans for you.'
+    },
+];
+
+
+
+export const items = [
+    {
+        icon: "",
+        title: "Electricity Plan Comparisons",
+        description: "We’ll help you find the best provider for your energy needs.",
+    },
+    {
+        icon: "",
+        title: "Gas Plan Comparisons",
+        description: "We’ll help you find the best provider for your energy needs.",
+
+    },
+    {
+        icon: "",
+        title: "Internet Plan Comparisons",
+        description: "We’ll help you find the best provider for your energy needs.",
+
+    },
+    {
+        icon: "",
+        title: "Bundle Packages",
+        description: "We’ll help you find the best provider for your energy needs.",
+
+    },
+];
+
+
+ export const footerLinks = {
+    quickLinks: ["About", "How It Works", "Services", "Testimonials", "Why Us", "FAQ"],
+    services: ["Privacy Policy", "Terms Of Services"],
+};
+
+
+export const slides = [slide1, slide2, slide3, slide4, slide5, slide6];
+
+
+
+export const features = [
+    {
+        img: circle,
+        title: "Simplified Comparison Process",
+        description:
+            "Our intuitive platform lets you compare the best utility providers in one place, helping you make a quick and informed decision.",
+    },
+    {
+        img: clock,
+        title: "Save Time and Money",
+        description:
+            "With up-to-date plans and pricing, you can be sure you’re getting the most competitive rates available.",
+    },
+    {
+        img: noServices,
+        title: "No Service Interruptions",
+        description:
+            "We take care of the entire switching process so you can enjoy a hassle-free experience with zero downtime.",
+    },
+    {
+        img: headphone,
+        title: "Comprehensive Support",
+        description:
+            "Whether you need assistance selecting a plan or during the switch, our dedicated support team is here to help every step of the way.",
+    },
+];
+
+
+export const silderData = [
+    {
+        img: man,
+        name: "Cameron",
+        post: "@cameron",
+        group: groupStar,
+        content:"Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.",
+        
+    },
+    {
+        img: man1,
+        name: "Ronald",
+        post: "@ronald",
+        group: groupStar,
+        content: "Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.",
+        },
+    {
+        img: man2,
+        name: "Jay Shah",
+        post: "@jayshah",
+        group: groupStar,
+        content: "Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.",
+        },
+]
+export const FaqData = [
+    {
+        question: "Can I switch providers if I’m currently in a contract?",
+        answer:
+            "Yes, but some contracts may include exit fees. We can guide you through the terms of your current plan and help you determine if switching now makes sense for you.",
+    },
+    {
+        question: "Will my service be interrupted if I switch providers?",
+        answer: "No, your service should remain uninterrupted during the switch.",
+    },
+    {
+        question: "How long does it take to switch providers?",
+        answer: "It usually takes 1–3 business days to complete the switch.",
+    },
+    {
+        question: "Is there a fee for switching providers?",
+        answer: "There may be a small administrative fee, depending on your provider.",
+    },
+];
