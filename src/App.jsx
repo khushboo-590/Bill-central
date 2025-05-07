@@ -18,8 +18,8 @@ function App() {
       <Slider />
       <SwitchEngery />
       <SwitchSilder />
-      {/* <Accordian />
-      <Utilies /> */}
+      {/* <Accordian /> */}
+      <Utilies />
       {/* <Testimonls /> */}
       {/* <Faq/>
       <JoinNews/>
