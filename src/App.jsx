@@ -15,15 +15,15 @@ function App() {
   return (
     <>
       <Header />
-      <Slider />
+      {/* <Slider />
       <SwitchEngery />
       <SwitchSilder />
       <Accordian />
-      <Utilies />
+      <Utilies /> */}
       {/* <Testimonls /> */}
-      <Faq/>
+      {/* <Faq/>
       <JoinNews/>
-      <Footer/>
+      <Footer/> */}
     </>
   )
 }
