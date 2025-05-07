@@ -8,7 +8,7 @@ import Accordian from './components/Accordian'
 import Footer from './components/Footer'
 import JoinNews from './components/JoinNews'
 import Utilies from './components/Utilies'
-import Testimonls from './components/Testimonls'
+// import Testimonls from './components/Testimonls'
 import Faq from './components/Faq'
 function App() {
 
@@ -20,7 +20,7 @@ function App() {
       <SwitchSilder />
       <Accordian />
       <Utilies />
-      <Testimonls />
+      {/* <Testimonls /> */}
       <Faq/>
       <JoinNews/>
       <Footer/>
