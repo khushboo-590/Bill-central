@@ -4,12 +4,12 @@ import Header from './components/Header'
 import Slider from './components/Slider'
 import SwitchEngery from './components/SwitchEngery'
 import SwitchSilder from './components/SwitchSilder'
-// import Accordian from './components/Accordian'
-// import Footer from './components/Footer'
-// import JoinNews from './components/JoinNews'
+import Accordian from './components/Accordian'
+import Footer from './components/Footer'
+import JoinNews from './components/JoinNews'
 import Utilies from './components/Utilies'
-// import Testimonls from './components/Testimonls'
-// import Faq from './components/Faq'
+import Testimonls from './components/Testimonls'
+import Faq from './components/Faq'
 function App() {
 
   return (
@@ -18,12 +18,12 @@ function App() {
       <Slider />
       <SwitchEngery />
       <SwitchSilder />
-      {/* <Accordian /> */}
+      <Accordian />
       <Utilies />
-      {/* <Testimonls /> */}
-      {/* <Faq/> */}
-      {/* <JoinNews/>
-      <Footer/> */}
+      <Testimonls />
+      <Faq/>
+      <JoinNews/>
+      <Footer/>
     </>
   )
 }
