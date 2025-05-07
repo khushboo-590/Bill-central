@@ -24,7 +24,7 @@
 
 
 // );
-export const bulb = () => (
+export const Bulb = () => (
     <svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_83479_2726)">
             <path d="M13.0123 13.1045C12.4622 13.1045 12.0146 13.552 12.0146 14.1021C12.0146 14.6522 12.4622 15.0998 13.0123 15.0998H14.01V14.1021C14.01 13.552 13.5624 13.1045 13.0123 13.1045Z" fill="white" />
@@ -41,4 +41,4 @@ export const bulb = () => (
         </defs>
     </svg>
 
-)
+);

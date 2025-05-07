@@ -16,7 +16,7 @@ import man from '../assets/images/png/man.png';
 import man1 from '../assets/images/png/girl1.png';
 import man2 from '../assets/images/png/man1.png';
 import groupStar from '../assets/images/png/star.png';
-import  bulb  from './icon';
+import { Bulb } from './icon'; 
 
 
 
@@ -56,26 +56,26 @@ export const cardLIST = [
 
 export const items = [
     {
-        icon: bulb,
+        icon: Bulb,
         title: "Electricity Plan Comparisons",
-        description: "We’ll help you find the best provider for your energy needs.",
+        description: "Whether you want renewable energy, low rates, or flexible contracts, we’ll help you find the best provider.",
     },
     {
         icon: "",
         title: "Gas Plan Comparisons",
-        description: "We’ll help you find the best provider for your energy needs.",
+        description: "Whether you want renewable energy, low rates, or flexible contracts, we’ll help you find the best provider.",
 
     },
     {
         icon: "",
         title: "Internet Plan Comparisons",
-        description: "We’ll help you find the best provider for your energy needs.",
+        description: "Whether you want renewable energy, low rates, or flexible contracts, we’ll help you find the best provider.",
 
     },
     {
         icon: "",
         title: "Bundle Packages",
-        description: "We’ll help you find the best provider for your energy needs.",
+        description: "Whether you want renewable energy, low rates, or flexible contracts, we’ll help you find the best provider.",
 
     },
 ];

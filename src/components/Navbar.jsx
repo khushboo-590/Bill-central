@@ -41,7 +41,7 @@ const Navbar = () => {
                 </div>
             </div>
             {isOpen && (
-                <div className="md:hidden flex flex-col space-y-2 px-2 text-sm bg-black pb-4  justify-center items-center fixed inset-0 ">
+                <div className="md:hidden flex flex-col space-y-3 px-2 text-sm bg-[#003459] pb-4  justify-center items-center fixed inset-0 ">
                     <a href="#" className="block hover:underline">About</a>
                     <a href="#" className="block hover:underline">How it Works</a>
                     <a href="#" className="block hover:underline">Services</a>
