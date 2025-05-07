@@ -141,7 +141,24 @@ export const silderData = [
         post: "@jayshah",
         group: groupStar,
         content: "Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.",
-        },
+    },
+    {
+        img: man1,
+        name: "Ronald",
+        post: "@ronald",
+        group: groupStar,
+        content: "Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.",
+    },
+    {
+        img: man1,
+        name: "Ronald",
+        post: "@ronald",
+        group: groupStar,
+        content: "Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.",
+    },
+    
+
+   
 ]
 export const FaqData = [
     {

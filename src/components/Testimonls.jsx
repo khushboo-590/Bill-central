@@ -1,52 +1,73 @@
-import React from 'react'
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Navigation } from 'swiper/modules'
-import { silderData } from '../utils/helper'
+import 'swiper/css/navigation';
+import { Navigation, Autoplay } from 'swiper/modules';
+
+import { silderData } from '../utils/helper';
+import left from "../assets/images/png/left.png"
+
 const Testimonls = () => {
   return (
-      <header>
-          <div className=' container max-w-[1240px] mx-auto flex flex-col justify-center items-center'>
-              <h2 className='text-black font-normal text-5xl leading-[110%]'>Our <span className='font-bold'> Testimonials</span></h2> 
-        <p className='max-w-[490px] text-black opacity-90 font-normal text-base leading-[150%] pt-4 pb-[64px] text-center'>Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum</p>
+    <header >
+      <div className='container max-w-[1240px] mx-auto flex flex-col justify-center items-center relative p-4'>
+        <h2 className='text-black font-normal text-5xl leading-[110%]'>
+          Our <span className='font-bold'>Testimonials</span>
+        </h2>
+        <p className='max-w-[490px] text-black opacity-90 font-normal text-base leading-[150%] pt-4 pb-[64px] text-center'>
+          Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum
+        </p>
+
+        <div className="relative w-full max-w-[1240px] mx-auto">
+          <div className="swiper-button-prev-custom absolute -left-4  sm:-left-12 top-1/2 -translate-y-1/2 z-10">
+            <img src={left} alt="prev" />
+          </div>
+
+          <div className="swiper-button-next-custom absolute -right-4 sm:-right-12 top-1/2 -translate-y-1/2 z-10 rotate-180">
+            <img src={left} alt="next"></img>
+            </div>
+
+
         <Swiper
-          className=""
-          modules={[Navigation]}
-          spaceBetween={24}
-          slidesPerView={3}
-          // breakpoints={{
-          //   640: { slidesPerView: 3, spaceBetween: 10 },
-          //   320: { slidesPerView: 2, spaceBetween: 10 },
-          // }}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
+          modules={[Autoplay, Navigation]}
+          navigation={{
+            nextEl: '.swiper-button-next-custom',
+            prevEl: '.swiper-button-prev-custom',
+          }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            1024: { slidesPerView: 3, spaceBetween: 24 },
+            640: { slidesPerView: 2, spaceBetween: 16 },
+            320: { slidesPerView: 1, spaceBetween: 12 },
+          }}
+          className="w-full max-w-[1240px] mx-auto"
         >
-        {silderData.map((item, index) => (
-          <SwiperSlide key={index} className='bg-white max-w-[364px] border-1 border-gray-300 p-[20px] rounded-[4px]'>
-            <div className='flex gap-4 items-center'>
-              <img src={item.img}></img>
-              <div className=''>
-                <p className='text-black text-2xl leading-[150%]  font-normal'>{ item.name}</p>
-                <p className='text-black text-base leading-[150%]  font-normal opacity-50'>{ item.post}</p>
+          {silderData.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="bg-white border border-gray-300 p-5 rounded-md max-w-[364px] mx-auto">
+                <div className="flex gap-4 items-center">
+                  <img src={item.img} alt="user" />
+                  <div>
+                    <p className="text-black text-2xl leading-[150%] font-normal">{item.name}</p>
+                    <p className="text-black text-base leading-[150%] font-normal opacity-50">{item.post}</p>
+                  </div>
+                </div>
+                <img src={item.group} alt="rating" className="mt-6" />
+                <p className="text-black text-base leading-[150%] font-normal opacity-90 mt-4 text-left">
+                  {item.content}
+                </p>
               </div>
-
-              </div>
-              <img src={item.group} className='mt-[24px]'></img>
-              <p className='text-black text-base leading-[150%]  font-normal opacity-90 max-w-[384px] mt-[18px]'>{ item.content}</p>
-
-
-
-           </SwiperSlide>
-
-        ))}
+            </SwiperSlide>
+          ))}
         </Swiper>
 
-          </div>
+        </div>
+        </div>
     </header>
-  )
-}
+  );
+};
 
-export default Testimonls
-
-
-
+export default Testimonls;
