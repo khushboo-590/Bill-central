@@ -29,7 +29,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="flex gap-16 md:w-1/2 justify-end">
+                <div className="flex gap-16 sm:w-1/2 md:justify-end">
                     <div>
                         <h4 className="text-xl font-bold mb-3 leading-[150%]">Quick Link</h4>
                             <ul className="space-y-2 ">

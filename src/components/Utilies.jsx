@@ -1,6 +1,6 @@
 import React from 'react'
 import { features } from '../utils/helper'
-import thumps from '../assets/images/png/thump.png'
+import thumps from '../assets/images/png/layer 2.png'
 import arror from '../assets/images/png/arror.png'
 const Utilies = () => {
   return (
@@ -9,7 +9,7 @@ const Utilies = () => {
           <p className='max-w-[620px] font-normal text-base leading-[150%] text-black opacity-90 text-center pt-4 '>This emphasizes both the action and the benefits, drawing in potential customers with a clear value proposition. Let me know if you'd like any adjustments!</p>
           <div className="lg:grid lg:grid-cols-3 bg-white   mt-[58px] md:gap-6  mb-[40px] lg:mb-[162px] gap-0  ">
               <div className="bg-[#003459] text-white p-3 md:p-6 flex flex-col justify-center items-start space-y-4 rounded-[4px] w-full h-[596px] max-w-[424px] mx-auto ">
-                      <img src={thumps}></img>
+                  <img src={thumps} className=''></img>
                   <h2 className="text-[24px] font-normal leading-[110%] pt-2 md:pt-[30px]">Tailored Recommendations</h2>
                   <p className="text-base opacity-90 leading-[150%] font-normal md:pt-[10px] md:max-w-[344px]">
                       Our platform analyzes your unique energy needs and preferences to suggest the best utility providers, ensuring you get the most personalized options available.

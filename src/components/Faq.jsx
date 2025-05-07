@@ -14,7 +14,7 @@ const Faq = () => {
    
     return (
         <div className="container max-w-[916px]  mx-auto p-4 ">
-            <h2 className="text-5xl font-normal text-center mb-4 leading-[110%] text-transform: capitalize">
+            <h2 className=" text-4xl md:text-5xl font-normal text-center mb-4 leading-[110%] text-transform: capitalize">
                 Frequently Asked <span className="font-bold">Questions</span>
             </h2>
             <p className="text-center text-black opacity-90 mb-6 text-base leading-[150%] max-w-[556px] mx-auto">
@@ -29,7 +29,7 @@ const Faq = () => {
                     >
                         <button onClick={() => toggleFAQ(index)} className="w-full text-left  p-[25px] flex justify-between items-center"
                         >
-                            <span className="text-2xl leading-[110%] font-normal ">{item.question}</span>
+                            <span className=" text-xl md:text-2xl leading-[110%] font-normal ">{item.question}</span>
                             {openIndex === index ? <img src={minus} alt="Collapse" /> : <img src={plus} alt="Expand" />}
                             
                         </button>

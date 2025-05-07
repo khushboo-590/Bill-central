@@ -13,14 +13,14 @@ const Accordian = () => {
     return (
         <section>
             <div className="container max-w-[1161px] mx-auto pt-[40px] lg:pt-[162px] p-4">
-                <div className=" flex flex-col-reverse lg:flex-row-reverse gap-[73px]">
+                <div className=" flex  lg:flex-row gap-[73px] flex-col-reverse">
                     <div className="flex-1 ">
                         <h2 className=" text-[38px] md:text-[48px] font-semibold  leading-[110%] lg:max-w-[456px] text - transform: capitalize text-[#00171F] mb-[45px]">
                             Comprehensive Utility <span className="font-bold ">Comparisons</span></h2>
                         {items.map((item, i) => (
                             <div
                                 key={i}
-                                className="border border-gray-300 rounded mb-[30px] p-[14px] cursor-pointer bg-white hover:shadow-md w-full lg:max-w-[578px]"
+                                className="border border-gray-300 rounded mb-[30px] p-[14px] cursor-pointer bg-white  hover:shadow-md w-full lg:max-w-[578px]"
                                 onClick={() => toggle(i)}
                             >
                                 <div className="flex items-center justify-between">
