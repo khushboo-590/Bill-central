@@ -15,9 +15,9 @@ function App() {
   return (
     <>
       <Header />
-      {/* <Slider />
+      <Slider />
       <SwitchEngery />
-      <SwitchSilder />
+      {/* <SwitchSilder />
       <Accordian />
       <Utilies /> */}
       {/* <Testimonls /> */}
