@@ -1,2 +1,12 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: 'Helvetica';
+    src: url('/src/assets/font/helivtica.zip') format('woff2');
+}
+
+body{
+        font-family: Helvetica;
+}
+.swiper-slide-active .testimonial-card {
+box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);}

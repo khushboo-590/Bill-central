@@ -47,7 +47,7 @@ const Testimonls = () => {
         >
           {silderData.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white border border-gray-300 p-5 rounded-md max-w-[364px] mx-auto">
+              <div className="bg-white border border-gray-300 p-5 rounded-md max-w-[364px] mx-auto testimonial-card">
                 <div className="flex gap-4 items-center">
                   <img src={item.img} alt="user" />
                   <div>
