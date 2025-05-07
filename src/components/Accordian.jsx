@@ -25,16 +25,16 @@ const Accordian = () => {
                             >
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center gap-4">
-                                        <span class="w-16 rounded-[50px] bg-[#EAF9FF] hover:bg-[#003459] h-16">{item.icon}</span>
+                                        <div className="w-16 rounded-[50px] bg-[#EAF9FF] hover:bg-[#003459] h-16 flex items-center justify-center">{item.icon}</div>
                                         <h3 className=" text-[20px] sm:text-[24px] font-normal leading-[110%] text-[#00171F] opacity-90 max-w-[442px]">
                                             {item.title}
                                         </h3>
                                     </div>
                                     <button
                                         onClick={() => setOpen(i)}
-                                        className=" "
+                                       
                                     >
-                                        {open === i ? <img src={up}></img> : <img src={down}></img>}
+                                        {open === i ? <img src={up} className=" cursor-pointer"></img> : <img src={down} className=" cursor-pointer"></img>}
                                     </button>
                                 </div>
                                 {open === i && item.description && (

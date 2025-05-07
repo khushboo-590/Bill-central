@@ -16,7 +16,7 @@ import man from '../assets/images/png/man.png';
 import man1 from '../assets/images/png/girl1.png';
 import man2 from '../assets/images/png/man1.png';
 import groupStar from '../assets/images/png/star.png';
-import { Bulb } from './icon'; 
+import { Bulb } from '../utils/icon'; 
 
 
 
@@ -56,7 +56,7 @@ export const cardLIST = [
 
 export const items = [
     {
-        icon: Bulb,
+        icon:Bulb,
         title: "Electricity Plan Comparisons",
         description: "Whether you want renewable energy, low rates, or flexible contracts, we’ll help you find the best provider.",
     },

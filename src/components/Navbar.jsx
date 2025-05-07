@@ -1,6 +1,8 @@
+
 import React, { useState, useEffect } from 'react';
 import Custombtn from './common/Custombtn';
 import logo from '../assets/images/png/logo.png';
+import { Up_Arrow } from '../utils/icon'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +39,11 @@ const Navbar = () => {
                 </div>
 
                 <div className="hidden md:flex items-center space-x-4">
-                    <Custombtn btn="Get started" className="bg-white text-black font-bold" />
+                    <Custombtn btn={
+                        <>
+                            Get started    <Up_Arrow />
+                        </>
+                    } className="bg-white text-black font-bold" />
                 </div>
             </div>
             {isOpen && (

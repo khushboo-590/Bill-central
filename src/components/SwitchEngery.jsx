@@ -1,6 +1,8 @@
 import React from 'react'
 import light from '../assets/images/png/light.png'
 import Custombtn from './common/Custombtn'
+import { White_Arrow } from '../utils/icon'
+
 
 const SwitchEngery = () => {
   return (
@@ -17,7 +19,9 @@ const SwitchEngery = () => {
                           <li className='font-normal text-base  leading-[150%] text-[#00171F] mt-2'>Get better customer service.</li>
                           <li className='font-normal text-base  leading-[150%] text-[#00171F] mt-2'>Explore greener, more sustainable energy options.</li>
                       </ul>
-                      <Custombtn btn="Compare With Us" className='bg-[#00A8E8] max-w-[201px] text-white  font-bold  mt-[42px] '/>
+                      <Custombtn btn={ <>
+                                                Compare With Us   <White_Arrow />
+                                              </>} className='bg-[#00A8E8] max-w-[201px] text-white  font-bold  mt-[42px] '/>
                   </div>
                   </div>
                      

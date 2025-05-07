@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import girl from '../assets/images/png/girl.png'
 import dots from '../assets/images/svg/dots.svg'
 import Custombtn from './common/Custombtn'
+import { White_Arrow } from '../utils/icon'
 
 const Header = () => {
     return (
@@ -19,12 +20,15 @@ const Header = () => {
                                 className="w-[476px] px-[22px] py-[24px] rounded-[0px_100px_100px_20px] border-1 border-gray-300 text-gray-500  text-base font-normal leading-[17.6px]  bg-white"
                             />
 
-                            <Custombtn btn="campare" className="absolute top-1/2 -translate-y-1/2 right-[20px] text-white font-bold  "></Custombtn>
+                            <Custombtn btn={
+                                <>
+                                    Compare   <White_Arrow />
+                                </>} className="absolute top-1/2 -translate-y-1/2 right-[20px] text-white font-bold  "></Custombtn>
                         </label>
 
                     </div>
                     <img src={girl} alt="Header Image" className='w-full  relative z-3 mt-[30px] lg:mt-[109px] lg:h-[706px] h-none' />
-                    <img src={dots} alt="Header Image" className=' absolute right-[120px] mt-8 hidden lg:block' />
+                    <img src={dots} alt="Header Image" className=' absolute right-[120px] mt-[53px] hidden lg:block ' />
 
 
                 </div>
