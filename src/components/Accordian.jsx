@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
 import { items } from '../utils/helper'
+import up from '../assets/images/png/up.png'
+import down from '../assets/images/png/down.png'
 import accordianImg from '../assets/images/png/accodian-img.png' 
 
 
@@ -10,29 +12,29 @@ const Accordian = () => {
     const toggle = (i) => setOpen(open === i ? null : i);
   return (
       <section>
-          <div className="container max-w-[1140px] mx-auto px-4 py-8 ">
-              <div className="flex flex-col lg:flex-row p-6 gap-[73px]  ">
+          <div className="container max-w-[1140px] mx-auto pt-[40px] lg:pt-[162px] p-4">
+              <div className="flex flex-col lg:flex-row  gap-[73px]  ">
                   <div className="flex-1 ">
-                              <h2 className="text-[48px] font-semibold  leading-[110%] max-w-[456px] text - transform: capitalize text-[#00171F] mb-[45px]">
+                              <h2 className=" text-[38px] md:text-[48px] font-semibold  leading-[110%] lg:max-w-[456px] text - transform: capitalize text-[#00171F] mb-[45px]">
                                   Comprehensive Utility <span className="font-bold ">Comparisons</span></h2>
                       {items.map((item, i) => (
                           <div
                               key={i}
-                              className="border border-gray-300 rounded mb-[30px] p-[20px] cursor-pointer bg-white hover:shadow-sm w-full lg:max-w-[578px]"
+                              className="border border-gray-300 rounded mb-[30px] p-[14px] cursor-pointer bg-white hover:shadow-sm w-full lg:max-w-[578px]"
                               onClick={() => toggle(i)}
                           >
                               <div className="flex items-center justify-between">
                                   <div className="flex items-center gap-4">
-                                      <span>{item.icon}</span>
-                                      <h3 className="text-[24px] font-normal leading-[110%] text-[#00171F] opacity-90">
+                                      <span class="w-16 rounded-[50px] bg-[#EAF9FF] hover:bg-[#003459] h-16">{item.icon}</span>
+                                      <h3 className=" text-[20px] sm:text-[24px] font-normal leading-[110%] text-[#00171F] opacity-90">
                                           {item.title}
                                       </h3>
                                   </div>
                                   <button
                                       onClick={() => setOpen(i)}
-                                      className="text-[24px] font-bold focus:outline-none"
+                                      className=" "
                                   >
-                                      {open === i ? "–" : "+"}
+                                      {open === i ? <img src={up}></img> : <img src={down}></img>}
                                   </button>
                               </div>
                               {open === i && item.description && (

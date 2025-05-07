@@ -18,7 +18,7 @@ function App() {
       <Slider />
       <SwitchEngery />
       <SwitchSilder />
-      {/* <Accordian /> */}
+      <Accordian />
       <Utilies />
       {/* <Testimonls /> */}
       {/* <Faq/>
