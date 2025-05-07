@@ -21,9 +21,9 @@ function App() {
       <Accordian />
       <Utilies />
       {/* <Testimonls /> */}
-      {/* <Faq/>
+      <Faq/>
       <JoinNews/>
-      <Footer/> */}
+      <Footer/>
     </>
   )
 }

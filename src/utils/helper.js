@@ -151,14 +151,17 @@ export const FaqData = [
     },
     {
         question: "Will my service be interrupted if I switch providers?",
-        answer: "No, your service should remain uninterrupted during the switch.",
+        answer:
+            "Yes, but some contracts may include exit fees. We can guide you through the terms of your current plan and help you determine if switching now makes sense for you.",
     },
     {
         question: "How long does it take to switch providers?",
-        answer: "It usually takes 1–3 business days to complete the switch.",
+        answer:
+            "Yes, but some contracts may include exit fees. We can guide you through the terms of your current plan and help you determine if switching now makes sense for you.",
     },
     {
         question: "Is there a fee for switching providers?",
-        answer: "There may be a small administrative fee, depending on your provider.",
+        answer:
+            "Yes, but some contracts may include exit fees. We can guide you through the terms of your current plan and help you determine if switching now makes sense for you.",
     },
 ];

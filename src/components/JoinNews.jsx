@@ -3,7 +3,8 @@ import Custombtn from './common/Custombtn'
 
 const JoinNews = () => {
     return (
-        <header className='container max-w-[1140px] bg-[url(./assets/images/png/newsletter.png)] mx-auto transform translate-y-[50%] p-4'>
+        <header className='container max-w-[1140px] mx-auto'>
+            <div className="bg-[url(./assets/images/png/news.png)]  transform translate-y-[50%] p-4">
             <div className=' max-w-[620px] flex flex-col justify-center items-center mx-auto '>
                 <h2 className=' font-normal text-[48px] leading-[110%] text-center text-transform:capitalize text-black pt-[54px]'>Join Our<span className="font-bold"> Newsletter</span></h2>
                 <p className='pt-4 text-black text-center font-noraml text-base leading-[150%] opacity-90 pb-[42px]'>Stay up to date with the latest deals, energy-saving tips, and exclusive offers! Sign up for our newsletter and never miss out on great savings opportunities again.</p>
@@ -21,7 +22,7 @@ const JoinNews = () => {
                 </label>
 
 
-
+            </div>
             </div>
 
         </header>
