@@ -38,7 +38,7 @@ const Testimonls = () => {
               640: { slidesPerView: 2, spaceBetween: 16 },
               320: { slidesPerView: 1, spaceBetween: 12 },
             }}
-            className="w-full max-w-[1240px] mx-auto"
+            className="w-full max-w-[1140px] mx-auto"
           >
             {silderData.map((item, index) => (
               <SwiperSlide key={index}>

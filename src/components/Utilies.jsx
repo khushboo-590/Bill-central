@@ -41,7 +41,8 @@ const Utilies = () => {
                         ))}
                     </div>
                 </div>
-                </header></div>
+                </header>
+                </div>
         </section>
     )
 }

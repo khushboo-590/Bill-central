@@ -9,7 +9,7 @@ import CustomContent from './common/CustomContent'
 
 const Footer = () => {
     return (
-        <footer className="bg-[#022D52] text-white " >
+        <footer className="bg-[url(./assets/images/png/Footer.png)] bg-cover bg-center text-white " >
             <div className=' container max-w-[1140px] mx-auto pt-[120px] md:pt-[180px] lg:pt-[234px] p-4 '>
                 <div className="flex flex-col md:flex-row justify-between gap-10 ">
                     <div className="md:w-1/2">

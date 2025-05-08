@@ -37,7 +37,7 @@ const Header = () => {
 
                     </div>
                     <div data-aos="zoom-in-up" className='relative z-20'>
-                        <img src={girl} alt="Header Image" className='w-full  relative z-3 mt-[30px] lg:mt-[109px] lg:h-[706px] h-none ' /></div>
+                        <img src={girl} alt="Header Image" className='w-full  relative z-3 mt-[30px] lg:mt-[109px]   ' /></div>
                     <img src={dots} alt="Header Image" className=' absolute right-[120px] mt-[53px] hidden xl:block z-0 ' />
 
 
