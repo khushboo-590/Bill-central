@@ -24,9 +24,9 @@ const Slider = () => {
                     className="mySwiper mt-[30px] md:mt-[65px] mb-[30px] lg:mb-[162px] mx-auto"
                     breakpoints={{
                         1024: { slidesPerView: 6, spaceBetween: 30 },
-                        768: { slidesPerView: 4, spaceBetween: 20 },
-                        640: { slidesPerView: 3, spaceBetween: 10 },
-                        320: { slidesPerView: 2, spaceBetween: 10 },
+                        768: { slidesPerView: 5, spaceBetween: 20 },
+                        640: { slidesPerView: 4, spaceBetween: 10 },
+                        320: { slidesPerView: 3, spaceBetween: 10 },
                     }}
                 >
                     {slides.map((src, index) => (

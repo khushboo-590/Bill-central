@@ -8,3 +8,6 @@
 body{
         font-family: Helvetica;
 }
+html {
+    scroll-behavior: smooth;
+}

@@ -8,6 +8,7 @@ import CustomContent from './common/CustomContent';
 
 const SwitchSilder = () => {
     return (
+        <section id="how-it-works">
         <div className='max-lg:pb-[44px] pb-[30px]'>
             <div className="2xl:container pt-[40px] lg:pt-[162px] mx-auto">
                 <div className='flex flex-col  justify-center text-center items-center'>
@@ -48,7 +49,8 @@ const SwitchSilder = () => {
                     ))}
                 </Swiper>
             </div>
-        </div>
+            </div>
+        </section>
     );
 };
 

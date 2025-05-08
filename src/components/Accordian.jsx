@@ -19,7 +19,7 @@ const Accordian = () => {
 
     const toggle = (i) => setOpen(open === i ? null : i);
     return (
-        <section>
+        <section id="services">
             <div className="container max-w-[1161px] mx-auto pt-[40px] lg:pt-[162px] p-4">
                 <div className=" flex  lg:flex-row gap-[73px] flex-col-reverse">
                     <div className="flex-1 ">

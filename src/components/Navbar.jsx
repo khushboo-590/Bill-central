@@ -30,13 +30,14 @@ const Navbar = () => {
                     <span className={`block w-6 h-1 bg-white transition-all duration-300 ${isOpen && "-rotate-45 -translate-y-[8px]"}`}></span>
                 </div>
                 <div className="hidden md:flex items-center space-x-6 text-sm">
-                    <a href="#" className="hover:underline font-normal text-base leading-[100%] opacity-90">About</a>
-                    <a href="#" className="hover:underline font-normal text-base leading-[100%] opacity-90">How it Works</a>
-                    <a href="#" className="hover:underline font-normal text-base leading-[100%] opacity-90">Services</a>
-                    <a href="#" className="hover:underline font-normal text-base leading-[100%] opacity-90">Testimonials</a>
-                    <a href="#" className="hover:underline font-normal text-base leading-[100%] opacity-90">Why Use</a>
-                    <a href="#" className="hover:underline font-normal text-base leading-[100%] opacity-90">FAQs</a>
+                    <a href="#about" className="hover:underline font-normal text-base leading-[100%] opacity-90">About</a>
+                    <a href="#how-it-works" className="hover:underline font-normal text-base leading-[100%] opacity-90">How it Works</a>
+                    <a href="#services" className="hover:underline font-normal text-base leading-[100%] opacity-90">Services</a>
+                    <a href="#testimonials" className="hover:underline font-normal text-base leading-[100%] opacity-90">Testimonials</a>
+                    <a href="#why-use" className="hover:underline font-normal text-base leading-[100%] opacity-90">Why Use</a>
+                    <a href="#faqs" className="hover:underline font-normal text-base leading-[100%] opacity-90">FAQs</a>
                 </div>
+
 
                 <div className="hidden md:flex items-center space-x-4">
                     <Custombtn btn={
@@ -47,15 +48,18 @@ const Navbar = () => {
                 </div>
             </div>
             {isOpen && (
-                <div className="md:hidden flex flex-col space-y-3 px-2 text-sm bg-[#003459] pb-4  justify-center items-center fixed inset-0 ">
+                <div className="md:hidden flex flex-col space-y-3 px-2 text-sm bg-[#003459]/80 backdrop-blur-md  pb-4  justify-center items-center fixed inset-0  ">
                     <a href="#" className="block hover:underline">About</a>
                     <a href="#" className="block hover:underline">How it Works</a>
                     <a href="#" className="block hover:underline">Services</a>
                     <a href="#" className="block hover:underline">Testimonials</a>
                     <a href="#" className="block hover:underline">Why Use</a>
                     <a href="#" className="block hover:underline">FAQs</a>
-                    <Custombtn btn="Get started" className="bg-white text-black font-bold" />
-
+                    <Custombtn btn={
+                        <>
+                            Get Started    <Up_Arrow />
+                        </>
+                    } className="bg-white text-black font-bold hover:bg-black hover:text-white " />
                 </div>
             )}
         </nav>

@@ -10,7 +10,7 @@ import CustomContent from './common/CustomContent';
 
 const Testimonls = () => {
   return (
-    <header >
+    <section id="testimonials">
       <div className='container max-w-[1240px] mx-auto flex flex-col justify-center items-center relative p-4'>
         <h2 className='text-black font-normal text-5xl leading-[110%]'>
           Our <span className='font-bold'>Testimonials</span>
@@ -67,7 +67,7 @@ const Testimonls = () => {
 
         </div>
       </div>
-    </header>
+    </section>
   );
 };
 

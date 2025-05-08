@@ -15,7 +15,7 @@ const SwitchEngery = () => {
         });
     }, [])
     return (
-        <section className='bg-white'>
+        <section className='bg-white' id="about">
             <div className='container max-w-[1140px] mx-auto flex flex-col items-center justify-center  p-4'>
                 <div className=' grid grid-cols-1 lg:grid-cols-2 gap-[75px]'>
                     <div data-aos="slide-right">

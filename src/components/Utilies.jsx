@@ -12,7 +12,8 @@ const Utilies = () => {
                 once: true,     
             });
         }, [])
-  return (
+    return (
+      <section id="why-use">
       <header className='container max-w-[1140px] p-4 mx-auto flex-col flex justify-center items-center  pt-[40px] lg:pt-[162px]'>
           <h2 className=' text-[38px] md:text-[48px] leaading-[110%] font-normal text-tranform:capitalize text-black text-center'>Why Choose Us for <span className='font-bold'>Utilities</span></h2>
           <CustomContent content="This emphasizes both the action and the benefits, drawing in potential customers with a clear value proposition. Let me know if you'd like any adjustments!" className="max-w-[620px] text-black opacity-90 text-center pt-4  "/>
@@ -41,7 +42,8 @@ const Utilies = () => {
                   ))}
               </div>
           </div>
-      </header>
+            </header>
+        </section>
   )
 }
 
