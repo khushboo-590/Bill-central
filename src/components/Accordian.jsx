@@ -16,7 +16,8 @@ const Accordian = () => {
             duration: 3000,
             once: true,
         });
-                AOS.refresh();    
+                AOS.refresh();
+        
     }, []);
     return (
         <section id="services">
@@ -54,7 +55,6 @@ const Accordian = () => {
                     </div>
                     <div className="flex-1">
                         <div data-aos="fade-up">
-
                             <img src={accordianImg}
                                 alt="Discussion"
                                 className="w-full mt-[39px] "
