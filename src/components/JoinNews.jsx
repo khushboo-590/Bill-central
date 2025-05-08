@@ -1,15 +1,25 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Custombtn from './common/Custombtn'
 import { White_Arrow } from '../utils/icon'
-
+import CustomContent from './common/CustomContent'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const JoinNews = () => {
+     useEffect(() => {
+                AOS.init({
+                    duration: 3000, 
+                    once: true,     
+                });
+            }, [])
     return (
         <header className='container max-w-[1140px] mx-auto'>
+            <div data-aos="fade-up-right">
+
             <div className="bg-[url(./assets/images/png/news.png)]  transform translate-y-[50%] p-4">
                 <div className=' max-w-[620px] flex flex-col justify-center items-center mx-auto '>
                     <h2 className=' font-normal text-[48px] leading-[110%] text-center text-transform:capitalize text-black pt-[54px]'>Join Our<span className="font-bold"> Newsletter</span></h2>
-                    <p className='pt-4 text-black text-center font-noraml text-base leading-[150%] opacity-90 pb-[42px]'>Stay up to date with the latest deals, energy-saving tips, and exclusive offers! Sign up for our newsletter and never miss out on great savings opportunities again.</p>
+                    <CustomContent content="Stay up to date with the latest deals, energy-saving tips, and exclusive offers! Sign up for our newsletter and never miss out on great savings opportunities again." className="pt-4 text-black opacity-90 pb-[42px] text-center"/>
                     <label className="relative flex items-center w-full max-w-[476px]  px-4 sm:px-0 mb-[54px]">
                         <input
                             type="text"
@@ -22,11 +32,11 @@ const JoinNews = () => {
                                 <>
                                     submit   <White_Arrow />
                                 </>}
-                            className="absolute top-1/2 -translate-y-1/2 right-[20px] text-white font-bold"
+                            className="absolute top-1/2 -translate-y-1/2 right-[10px] text-white font-bold bg-[#00A8E8]  hover:border-1 border-[#00A8E8] hover:bg-white hover:text-[#00A8E8] "
                         />
                     </label>
 
-
+</div>
                 </div>
             </div>
 

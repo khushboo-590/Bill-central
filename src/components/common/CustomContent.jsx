@@ -1,11 +1,9 @@
 import React from 'react'
 
-const CustomContent = ({content}) => {
+const CustomContent = ({content,className}) => {
   return (
-    <div>
-          <p className={` text-black text-center font-noraml text-base leading-[150%] ${className}  `}>{content}</p>
+          <p className={` font-noraml text-base leading-[150%] ${className}`}>{content}</p>
 
-    </div>
   )
 }
 

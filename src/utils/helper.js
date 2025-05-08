@@ -16,7 +16,10 @@ import man from '../assets/images/png/man.png';
 import man1 from '../assets/images/png/girl1.png';
 import man2 from '../assets/images/png/man1.png';
 import groupStar from '../assets/images/png/star.png';
-import { Bulb } from '../utils/icon'; 
+import bulb from '../assets/images/svg/bulb.svg'; 
+import box from '../assets/images/png/box.png';
+import phn from '../assets/images/png/phn.png';
+import eng from '../assets/images/png/e.png';
 
 
 
@@ -56,24 +59,24 @@ export const cardLIST = [
 
 export const items = [
     {
-        Icon:Bulb,
+        icon:bulb,
         title: "Electricity Plan Comparisons",
         description: "Whether you want renewable energy, low rates, or flexible contracts, we’ll help you find the best provider.",
     },
     {
-        icon: "",
+        icon: phn,
         title: "Gas Plan Comparisons",
         description: "Whether you want renewable energy, low rates, or flexible contracts, we’ll help you find the best provider.",
 
     },
     {
-        icon: "",
+        icon: eng,
         title: "Internet Plan Comparisons",
         description: "Whether you want renewable energy, low rates, or flexible contracts, we’ll help you find the best provider.",
 
     },
     {
-        icon: "",
+        icon: box,
         title: "Bundle Packages",
         description: "Whether you want renewable energy, low rates, or flexible contracts, we’ll help you find the best provider.",
 
@@ -87,7 +90,7 @@ export const items = [
 };
 
 
-export const slides = [slide1, slide2, slide3, slide4, slide5, slide6];
+export const slides = [slide1, slide2, slide3, slide4, slide5, slide6, slide2];
 
 
 
@@ -150,7 +153,7 @@ export const silderData = [
         content: "Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.",
     },
     {
-        img: man1,
+        img: man,
         name: "Ronald",
         post: "@ronald",
         group: groupStar,

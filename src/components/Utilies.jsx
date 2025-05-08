@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useEffect} from 'react'
 import { features } from '../utils/helper'
 import thumps from '../assets/images/png/layer 2.png'
 import arror from '../assets/images/png/arror.png'
+import CustomContent from './common/CustomContent'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 const Utilies = () => {
+      useEffect(() => {
+            AOS.init({
+                duration: 3000, 
+                once: true,     
+            });
+        }, [])
   return (
       <header className='container max-w-[1140px] p-4 mx-auto flex-col flex justify-center items-center  pt-[40px] lg:pt-[162px]'>
           <h2 className=' text-[38px] md:text-[48px] leaading-[110%] font-normal text-tranform:capitalize text-black text-center'>Why Choose Us for <span className='font-bold'>Utilities</span></h2>
-          <p className='max-w-[620px] font-normal text-base leading-[150%] text-black opacity-90 text-center pt-4 '>This emphasizes both the action and the benefits, drawing in potential customers with a clear value proposition. Let me know if you'd like any adjustments!</p>
+          <CustomContent content="This emphasizes both the action and the benefits, drawing in potential customers with a clear value proposition. Let me know if you'd like any adjustments!" className="max-w-[620px] text-black opacity-90 text-center pt-4  "/>
           <div className="lg:grid lg:grid-cols-3 bg-white   mt-[58px] md:gap-6  mb-[40px] lg:mb-[162px] gap-0  ">
               <div className="bg-[#003459] text-white p-3 md:p-6 flex flex-col justify-center items-start space-y-4 rounded-[4px] w-full h-[596px] max-w-[424px] mx-auto ">
                   <img src={thumps} className=''></img>
@@ -23,7 +32,9 @@ const Utilies = () => {
                   {features.map((feature, index) => (
                       <div key={index} className="bg-white  border-1 border-gray-300 hover:shadow-xl rounded-lg p-4 md:p-6 transition">
                           <div className="mb-4">
-                              <img src={feature.img}></img></div>
+                              <div data-aos="fade-up">
+
+                                  <img src={feature.img}></img></div></div>
                           <h3 className="font-medium text-[24px]  leading-[110%] text-[#010101] pt-[12px]">{feature.title}</h3>
                           <p className="text-base leading-[150%] font-normal pt-[12px] text-[#00171F] opacity-90">{feature.description}</p>
                       </div>

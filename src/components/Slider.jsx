@@ -2,7 +2,6 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
-
 import { slides } from '../utils/helper'
 
 
@@ -11,8 +10,8 @@ const Slider = () => {
         <section className="bg-white">
             <div className="container max-w-[1140px] mx-auto p-4">
                 <h2 className="font-normal text-[30px] md:text-[38px] leading-[110%] text-[#003459] lg:max-w-[548px] mt-[45px] text-center lg:text-left ">
-                    More than
-                    <span className="text-[#00A8E8]"> 80,000+</span> companies trust bill central
+                    More Than
+                    <span className="text-[#00A8E8] font-bold"> 80,000+</span> Companies trust Bill Central
                 </h2>
 
 
@@ -30,9 +29,9 @@ const Slider = () => {
                         320: { slidesPerView: 2, spaceBetween: 10 },
                     }}
                 >
-                    {slides.map((src, idx) => (
-                        <SwiperSlide key={idx}>
-                            <img src={src} alt={`Slide ${idx + 1}`} />
+                    {slides.map((src, index) => (
+                        <SwiperSlide key={index}>
+                            <img src={src} alt={`Slide ${index + 1}`} />
                         </SwiperSlide>
                     ))}
                 </Swiper>

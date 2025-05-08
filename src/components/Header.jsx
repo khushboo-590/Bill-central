@@ -6,6 +6,7 @@ import Custombtn from './common/Custombtn'
 import { White_Arrow } from '../utils/icon'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import CustomContent from './common/CustomContent'
 
 const Header = () => {
     useEffect(() => {
@@ -21,7 +22,7 @@ const Header = () => {
                 <div className=' grid grid-cols-1 md:grid-cols-2 gap-6'>
                     <div className='flex flex-col  mt-[40px]  lg:mt-[122px]  '>
                         <h1 className='text-[40px] sm:text-[50px] lg:text-[60px] font-normal text-white leading-[110%] md:max-w-[506px]'>Easily Compare <span className='font-bold'>Energy, Gas, And Internet</span> Plans</h1>
-                        <p className='text-white text-base  mt-4  font-noraml'> Find and switch to the best energy, gas, and internet plans with ease. Our platform simplifies your search, letting you compare providers and make informed decisions, all in one place.</p>
+                        <CustomContent content="Find and switch to the best energy, gas, and internet plans with ease. Our platform simplifies your search, letting you compare providers and make informed decisions, all in one place." className="text-white mt-4 opacity-90"/>
                         <label className="relative flex items-center mt-4   lg:mt-[42px] max-w-[476px]">
                             <input type="text" id="text"
                                 placeholder="Start typing your address"
@@ -31,7 +32,7 @@ const Header = () => {
                             <Custombtn btn={
                                 <>
                                     Compare   <White_Arrow />
-                                </>} className="absolute top-1/2 -translate-y-1/2 right-[20px] text-white font-bold  "></Custombtn>
+                                </>} className="absolute top-1/2 -translate-y-1/2 right-[10px] text-white font-bold bg-[#00A8E8]  hover:border-1 border-[#00A8E8] hover:bg-white hover:text-[#00A8E8] "></Custombtn>
                         </label>
 
                     </div>

@@ -30,20 +30,20 @@ const Navbar = () => {
                     <span className={`block w-6 h-1 bg-white transition-all duration-300 ${isOpen && "-rotate-45 -translate-y-[8px]"}`}></span>
                 </div>
                 <div className="hidden md:flex items-center space-x-6 text-sm">
-                    <a href="#" className="hover:underline font-normal text-base leading-[100%]">About</a>
-                    <a href="#" className="hover:underline font-normal text-base leading-[100%]">How it Works</a>
-                    <a href="#" className="hover:underline font-normal text-base leading-[100%]">Services</a>
-                    <a href="#" className="hover:underline font-normal text-base leading-[100%]">Testimonials</a>
-                    <a href="#" className="hover:underline font-normal text-base leading-[100%]">Why Use</a>
-                    <a href="#" className="hover:underline font-normal text-base leading-[100%]">FAQs</a>
+                    <a href="#" className="hover:underline font-normal text-base leading-[100%] opacity-90">About</a>
+                    <a href="#" className="hover:underline font-normal text-base leading-[100%] opacity-90">How it Works</a>
+                    <a href="#" className="hover:underline font-normal text-base leading-[100%] opacity-90">Services</a>
+                    <a href="#" className="hover:underline font-normal text-base leading-[100%] opacity-90">Testimonials</a>
+                    <a href="#" className="hover:underline font-normal text-base leading-[100%] opacity-90">Why Use</a>
+                    <a href="#" className="hover:underline font-normal text-base leading-[100%] opacity-90">FAQs</a>
                 </div>
 
                 <div className="hidden md:flex items-center space-x-4">
                     <Custombtn btn={
                         <>
-                            Get started    <Up_Arrow />
+                            Get Started    <Up_Arrow />
                         </>
-                    } className="bg-white text-black font-bold" />
+                    } className="bg-white text-black font-bold hover:bg-black hover:text-white " />
                 </div>
             </div>
             {isOpen && (

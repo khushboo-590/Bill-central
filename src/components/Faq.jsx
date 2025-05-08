@@ -1,11 +1,19 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import React from 'react'
 import { FaqData } from "../utils/helper";
 import minus from '../assets/images/png/minus1.png'
 import plus from '../assets/images/png/pplus.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 
 const Faq = () => {
+      useEffect(() => {
+            AOS.init({
+                duration: 3000, 
+                once: true,     
+            });
+        }, [])
     const [openIndex, setOpenIndex] = useState(null);
 
     const toggleFAQ = (index) => {
@@ -24,13 +32,13 @@ const Faq = () => {
                 {FaqData.map((item, index) => (
                     <div
                         key={index}
-                        className={`  shadow rounded ${openIndex === index ? "bg-[#003459] text-white" : "bg-white text-black"
+                        className={`  shadow-lg rounded ${openIndex === index ? "bg-[#003459] text-white" : "bg-white text-black"
                             }`}
                     >
                         <button onClick={() => toggleFAQ(index)} className="w-full text-left  p-[25px] flex justify-between items-center"
                         >
                             <span className=" text-xl md:text-2xl leading-[110%] font-normal ">{item.question}</span>
-                            {openIndex === index ? <img src={minus} alt="Collapse" /> : <img src={plus} alt="Expand" />}
+                            {openIndex === index ? <img src={minus} alt="Collapse" className="transition-transform duration-300 transform " /> : <img src={plus} alt="Expand" className="transition-transform duration-300 transform " />}
                             
                         </button>
                         {openIndex === index && (

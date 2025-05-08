@@ -5,6 +5,7 @@ import face from '../assets/images/svg/face.svg'
 import cemra from '../assets/images/svg/cemra.svg'
 import x from '../assets/images/svg/x.svg'
 import billIcon from '../assets/images/png/bill.png'
+import CustomContent from './common/CustomContent'
 
 const Footer = () => {
     return (
@@ -12,11 +13,10 @@ const Footer = () => {
             <div className=' container max-w-[1140px] mx-auto sm:pt-[234px] p-4 pt-[270px]'>
             <div className="flex flex-col md:flex-row justify-between gap-10 sm:justify-center">
                 <div className="md:w-1/2">
-                        <img src={billIcon }></img>
-                   <p className="text-sm leading-[150%] mb-4 max-w-[297px] mt-[28px]  opacity-90">
-                        Ut auctor nisi mauris eu tincidunt facilisi. Diam amet sollicitudin pretium
-                        maecenas ornare lacus arcu adipiscing.
-                    </p>
+                        <img src={billIcon}></img>
+                        <CustomContent content=" Ut auctor nisi mauris eu tincidunt facilisi. Diam amet sollicitudin pretium
+                        maecenas ornare lacus arcu adipiscing." className="mb-4 max-w-[297px] mt-[28px]  opacity-90 text-white"/>
+                  
                     <div>
                         <h4 className="font-bold mb-2 text-xl leading-[110%]">Follow Us</h4>
                         <div className="flex space-x-4 mt-4">
