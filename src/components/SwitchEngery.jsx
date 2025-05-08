@@ -32,9 +32,9 @@ const SwitchEngery = () => {
                             <li className='font-normal text-base  leading-[150%] text-[#00171F] mt-2'>Get better customer service.</li>
                             <li className='font-normal text-base  leading-[150%] text-[#00171F] mt-2'>Explore greener, more sustainable energy options.</li>
                         </ul>
-                        <Custombtn btn={<>
-                            Compare With Us   <White_Arrow />
-                        </>} className='bg-[#00A8E8] max-w-[201px] text-white  font-bold  mt-[42px]   hover:border-1 border-[#00A8E8] hover:bg-white hover:text-[#00A8E8] ' />
+                        <Custombtn btn="
+                            Compare With Us"
+                        className='bg-[#00A8E8] max-w-[201px] text-white  font-bold  mt-[42px]   hover:border-1 border-[#00A8E8] hover:bg-white hover:text-[#00A8E8] ' />
                     </div>
                 </div>
 

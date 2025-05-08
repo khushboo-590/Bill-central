@@ -27,7 +27,7 @@ const JoinNews = () => {
                             className="w-full px-[22px] py-[24px] rounded-[0px_100px_100px_20px] border border-gray-300 text-gray-500 text-base font-normal leading-[17.6px] bg-white"
                         />
                         <Custombtn
-                            btn={<>submit   <White_Arrow /></>}
+                            btn="submit "
                             className="absolute top-1/2 -translate-y-1/2 right-[22px]  sm:right-[10px] text-white font-bold bg-[#007EA7]  hover:border-1 border-[#007EA7] hover:bg-white hover:text-[#007EA7] "
                         />
                     </label>

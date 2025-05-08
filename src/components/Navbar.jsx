@@ -32,10 +32,9 @@ const Navbar = () => {
                     ))}
                 </nav>
                 <div className="hidden lg:flex items-center space-x-4">
-                    <Custombtn btn={
-                        <>Get Started    <Up_Arrow />
-                        </>
-                    } className="bg-white text-black font-bold hover:bg-black hover:text-white " />
+                    <Custombtn btn=
+                        "Get Started"
+                     className="bg-white text-black font-bold hover:bg-black hover:text-white " />
                 </div>
 
                 <div onClick={toggleMenu} className="lg:hidden cursor-pointer z-10 flex flex-col gap-1"  >

@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import girl from '../assets/images/png/girl.png'
 import dots from '../assets/images/svg/dots.svg'
 import Custombtn from './common/Custombtn'
-import { White_Arrow } from '../utils/icon'
+// import { White_Arrow } from '../utils/icon'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import CustomContent from './common/CustomContent'
@@ -27,12 +27,8 @@ const Header = () => {
                             <input type="text" id="text"
                                 placeholder="Start typing your address"
                                 className="w-[476px] px-[22px] py-[24px] rounded-[0px_100px_100px_20px] border-1 border-gray-300 text-gray-500  text-base font-normal leading-[17.6px]  bg-white"
-                            />
-
-                            <Custombtn btn={
-                                <>
-                                    Compare   <White_Arrow />
-                                </>} className="absolute top-1/2 -translate-y-1/2 right-[10px] text-white font-bold bg-[#00A8E8]  hover:border-1 border-[#00A8E8] hover:bg-white hover:text-[#00A8E8] "></Custombtn>
+                            />                    <Custombtn btn = "Compare"
+                                 className="absolute top-1/2 -translate-y-1/2 right-[10px] text-white font-bold bg-[#00A8E8]  hover:border-1 border-[#00A8E8] hover:bg-white hover:text-[#00A8E8] "/>
                         </label>
 
                     </div>
