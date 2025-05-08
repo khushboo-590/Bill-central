@@ -56,7 +56,7 @@ export const cardLIST = [
 
 export const items = [
     {
-        icon:Bulb,
+        Icon:Bulb,
         title: "Electricity Plan Comparisons",
         description: "Whether you want renewable energy, low rates, or flexible contracts, we’ll help you find the best provider.",
     },

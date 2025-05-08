@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useEffect} from 'react'
 import Navbar from './Navbar'
 import girl from '../assets/images/png/girl.png'
 import dots from '../assets/images/svg/dots.svg'
 import Custombtn from './common/Custombtn'
 import { White_Arrow } from '../utils/icon'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const Header = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 2000, 
+            once: true,     
+        });
+    }, [])
     return (
         <section className='bg-[url(./assets/images/png/blue-img.png)] bg-cover bg-center lg:h-[810px] sm:rounded-bl-[200px] h-none'>
             <Navbar />
@@ -27,8 +35,9 @@ const Header = () => {
                         </label>
 
                     </div>
-                    <img src={girl} alt="Header Image" className='w-full  relative z-3 mt-[30px] lg:mt-[109px] lg:h-[706px] h-none' />
-                    <img src={dots} alt="Header Image" className=' absolute right-[120px] mt-[53px] hidden lg:block ' />
+                    <div data-aos="zoom-in-up">
+                        <img src={girl} alt="Header Image" className='w-full  relative z-3 mt-[30px] lg:mt-[109px] lg:h-[706px] h-none ' /></div>
+                    <img src={dots} alt="Header Image" className=' absolute right-[120px] mt-[53px] hidden lg:block  ' />
 
 
                 </div>

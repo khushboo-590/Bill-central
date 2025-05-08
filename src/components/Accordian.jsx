@@ -1,5 +1,7 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 import { items } from '../utils/helper'
 import up from '../assets/images/png/up.png'
 import down from '../assets/images/png/down.png'
@@ -7,6 +9,12 @@ import accordianImg from '../assets/images/png/accodian-img.png'
 
 
 const Accordian = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 5000,
+            once: true,
+        });
+    }, []);
     const [open, setOpen] = useState(null);
 
     const toggle = (i) => setOpen(open === i ? null : i);
@@ -25,7 +33,7 @@ const Accordian = () => {
                             >
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center gap-4">
-                                        <div className="w-16 rounded-[50px] bg-[#EAF9FF] hover:bg-[#003459] h-16 flex items-center justify-center">{item.icon}</div>
+                                        <div className="w-16 rounded-[50px] bg-[#EAF9FF] hover:bg-[#003459] h-16 flex items-center justify-center">{ item.Icon}</div>
                                         <h3 className=" text-[20px] sm:text-[24px] font-normal leading-[110%] text-[#00171F] opacity-90 max-w-[442px]">
                                             {item.title}
                                         </h3>
@@ -46,10 +54,13 @@ const Accordian = () => {
                         ))}
                     </div>
                     <div className="flex-1">
+                        <div data-aos="fade-up">
+
                         <img src={accordianImg}
                             alt="Discussion"
                             className="w-full mt-[39px] "
-                        />
+                            />
+                            </div>
                     </div>
                 </div>
             </div>

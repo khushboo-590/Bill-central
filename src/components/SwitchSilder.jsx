@@ -8,7 +8,7 @@ import 'swiper/css';
 const SwitchSilder = () => {
     return (
         <div className='max-lg:pb-[44px] pb-[30px]'>
-            <div className="2xl:container pt-[40px] lg:pt-[162px]">
+            <div className="2xl:container pt-[40px] lg:pt-[162px] mx-auto">
                 <div className='flex flex-col  justify-center text-center items-center'>
                 <h2 className=' text-[38px] md:text-[48px] text-[#1E1E1E] leading-[110%]  text-transform: capitalize; font-normal' > Simple Steps to < span className='font-bold' > Switch</span > </h2 >
                 <p className='text-base leading-[150%] font-normal text-[00171F] opacity-90 mt-4 max-w-[610px] px-4'>Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum</p>
