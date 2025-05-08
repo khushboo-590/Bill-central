@@ -8,15 +8,15 @@ import slide3 from '../assets/images/png/slide-3.png';
 import slide4 from '../assets/images/png/silde4.png';
 import slide5 from '../assets/images/png/silde5.png';
 import slide6 from '../assets/images/png/silde6.png';
-import circle from '../assets/images/png/circle.png';
-import clock from '../assets/images/png/clock.png';
-import noServices from '../assets/images/png/no-services.png';
-import headphone from '../assets/images/png/headphone.png';
+import circle from '../assets/images/svg/cicle.svg';
+import clock from '../assets/images/svg/clock.svg';
+import noServices from '../assets/images/svg/cut.svg';
+import headphone from '../assets/images/svg/head.svg';
 import man from '../assets/images/png/man.png';
 import man1 from '../assets/images/png/girl1.png';
 import man2 from '../assets/images/png/man1.png';
 import groupStar from '../assets/images/png/star.png';
-import bulb from '../assets/images/svg/bulb.svg'; 
+import bulb from '../assets/images/svg/lightbulb.svg'; 
 import box from '../assets/images/png/box.png';
 import phn from '../assets/images/png/phn.png';
 import eng from '../assets/images/png/e.png';
@@ -55,14 +55,14 @@ export const cardLIST = [
         alt: 'step-location',
         imgHeading: '1. Enter Your Location and Preferences',
         title: '1. Your Location',
-        description: 'Enter your location and preferences to find the best energy, gas, and internet plans for you.'
+        description: 'Complete the process in just a few clicks. We’ll handle the rest and ensure a smooth transition to your new provider.'
     },
     {
         img: card2,
         alt: 'step-compare',
         imgHeading: '2. Compare Providers',
         title: '2. Compare',
-        description: 'Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum'
+        description: 'Complete the process in just a few clicks. We’ll handle the rest and ensure a smooth transition to your new provider.'
     },
     {
         img: card3,
@@ -76,7 +76,7 @@ export const cardLIST = [
         alt: 'step-best-plan',
         imgHeading: '4. Choose the Best Plan',
         title: '4. Best Plan',
-        description: 'Enter your location and preferences to find the best energy, gas, and internet plans for you.'
+        description: 'Complete the process in just a few clicks. We’ll handle the rest and ensure a smooth transition to your new provider.'
     },
 ];
 

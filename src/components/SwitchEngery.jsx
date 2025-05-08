@@ -16,11 +16,11 @@ const SwitchEngery = () => {
     }, [])
     return (
         <section className='bg-white' id="about">
+            
             <div className='container max-w-[1140px] mx-auto flex flex-col items-center justify-center  p-4'>
                 <div className=' grid grid-cols-1 lg:grid-cols-2 gap-[75px]'>
                     <div data-aos="slide-right">
-
-                        <img src={light} className='mx-auto'></img>
+                  <img src={light} className='mx-auto'></img>
                     </div>
                     <div className='flex flex-col'>
                         <h2 className=' text-[38px] md:text-[48px]   text-[#1E1E1E] leading-[110%] lg:max-w-[409px] text-transform: capitalize; font-bold'>Switching Energy <span className='font-normal'>Made Simple</span> </h2>

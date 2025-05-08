@@ -8,12 +8,13 @@ import 'aos/dist/aos.css'
 const JoinNews = () => {
     useEffect(() => {
         AOS.init({
-            duration: 4000,
+            duration: 3000,
             once: true,
         });
+        AOS.refresh();
     }, [])
     return (
-        <div data-aos="fade-up-right">
+        <div data-aos="fade-up-right" >
             <div className="bg-[url(./assets/images/png/news.png)]  translate-y-[20%] transform lg:translate-y-[50%] p-4 container max-w-[1140px] mx-auto ">
                 <div className=' max-w-[620px] flex flex-col justify-center items-center mx-auto '>
                     <h2 className=' font-normal text-[48px] leading-[110%] text-center text-transform:capitalize text-black pt-[20px] md:pt-[54px]'>Join Our<span className="font-bold"> Newsletter</span></h2>

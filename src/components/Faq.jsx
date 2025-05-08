@@ -9,7 +9,6 @@ import 'aos/dist/aos.css'
 
 const Faq = () => {
     const [openIndex, setOpenIndex] = useState(null);
-
     const toggleFAQ = (index) => {
         setOpenIndex(openIndex === index ? null : index);
     };
@@ -18,7 +17,8 @@ const Faq = () => {
             duration: 3000,
             once: true,
         });
-    }, [])
+        AOS.refresh();
+    }, []);
     return (
         <section id="faqs">
             <div className="container max-w-[916px]  mx-auto p-4 pt-[40px] md:pt-[90px] lg:pt-[162px]">
