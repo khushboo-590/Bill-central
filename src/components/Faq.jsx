@@ -22,7 +22,7 @@ const Faq = () => {
    
     return (
         <section id="faqs">
-        <div  className="container max-w-[916px]  mx-auto p-4 pt-[40px] lg:pt-[162px]">
+        <div  className="container max-w-[916px]  mx-auto p-4 pt-[40px] md:pt-[90px] lg:pt-[162px]">
             <h2 className=" text-4xl md:text-5xl font-normal text-center mb-4 leading-[110%] text-transform: capitalize">
                 Frequently Asked <span className="font-bold">Questions</span>
             </h2>

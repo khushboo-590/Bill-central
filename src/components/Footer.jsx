@@ -10,7 +10,7 @@ import CustomContent from './common/CustomContent'
 const Footer = () => {
     return (
         <footer className="bg-[#022D52] text-white " >
-            <div className=' container max-w-[1140px] mx-auto sm:pt-[234px] p-4 pt-[270px]'>
+            <div className=' container max-w-[1140px] mx-auto md:pt-[234px] p-4 pt-[190px]'>
             <div className="flex flex-col md:flex-row justify-between gap-10 sm:justify-center">
                 <div className="md:w-1/2">
                         <img src={billIcon}></img>

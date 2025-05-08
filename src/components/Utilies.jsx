@@ -14,7 +14,7 @@ const Utilies = () => {
         }, [])
     return (
       <section id="why-use">
-      <header className='container max-w-[1140px] p-4 mx-auto flex-col flex justify-center items-center  pt-[40px] lg:pt-[162px]'>
+            <header className='container max-w-[1140px] p-4 mx-auto flex-col flex justify-center items-center  pt-[40px] md:pt-[90px] lg:pt-[162px]'>
           <h2 className=' text-[38px] md:text-[48px] leaading-[110%] font-normal text-tranform:capitalize text-black text-center'>Why Choose Us for <span className='font-bold'>Utilities</span></h2>
           <CustomContent content="This emphasizes both the action and the benefits, drawing in potential customers with a clear value proposition. Let me know if you'd like any adjustments!" className="max-w-[620px] text-black opacity-90 text-center pt-4  "/>
           <div className="lg:grid lg:grid-cols-3 bg-white   mt-[58px] md:gap-6  mb-[40px] lg:mb-[162px] gap-0  ">
@@ -29,7 +29,7 @@ const Utilies = () => {
                   </button>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4  col-span-2   mt-4 lg:mt-0 ">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4  col-span-2   mt-5 lg:mt-0 ">
                   {features.map((feature, index) => (
                       <div key={index} className="bg-white  border-1 border-gray-300 hover:shadow-xl rounded-lg p-4 md:p-6 transition">
                           <div className="mb-4">

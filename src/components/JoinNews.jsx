@@ -14,7 +14,7 @@ const JoinNews = () => {
             }, [])
     return (
           <div data-aos="fade-up-right">
-            <div className="bg-[url(./assets/images/png/news.png)]  translate-y-[20%] transform md:translate-y-[50%] p-4 container max-w-[1140px] mx-auto">
+            <div className="bg-[url(./assets/images/png/news.png)]  translate-y-[20%] transform lg:translate-y-[50%] p-4 container max-w-[1140px] mx-auto">
                 <div className=' max-w-[620px] flex flex-col justify-center items-center mx-auto '>
                     <h2 className=' font-normal text-[48px] leading-[110%] text-center text-transform:capitalize text-black pt-[54px]'>Join Our<span className="font-bold"> Newsletter</span></h2>
                     <CustomContent content="Stay up to date with the latest deals, energy-saving tips, and exclusive offers! Sign up for our newsletter and never miss out on great savings opportunities again." className="pt-4 text-black opacity-90 pb-[42px] text-center"/>
