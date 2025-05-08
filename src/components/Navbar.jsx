@@ -3,13 +3,14 @@ import React, { useState, useEffect } from 'react';
 import Custombtn from './common/Custombtn';
 import logo from '../assets/images/png/logo.png';
 import { Up_Arrow } from '../utils/icon'
+import { navLinks } from '../utils/helper';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
-    };
+    }
     useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = 'hidden';
@@ -19,50 +20,41 @@ const Navbar = () => {
     }, [isOpen]);
 
     return (
-        <nav className="text-white px-4 py-[31px] relative z-50">
+        <header className="text-white px-4 py-6 relative z-50">
             <div className="container max-w-[1140px] mx-auto flex items-center justify-between">
-                <div className="flex items-center space-x-2">
-                    <img src={logo} alt="Logo" />
-                </div>
-                <div onClick={toggleMenu} className="md:hidden cursor-pointer z-10 flex flex-col gap-1">
-                    <span className={`bg-white block w-6 h-1 transition-all duration-300 ${isOpen && "rotate-45 translate-y-[8px]"}`}></span>
-                    <span className={`block w-6 h-1 bg-white transition-all duration-300 ${isOpen && "opacity-0"}`}></span>
-                    <span className={`block w-6 h-1 bg-white transition-all duration-300 ${isOpen && "-rotate-45 -translate-y-[8px]"}`}></span>
-                </div>
-                <div className="hidden md:flex items-center space-x-6 text-sm">
-                    <a href="#about" className="hover:underline font-normal text-base leading-[100%] opacity-90">About</a>
-                    <a href="#how-it-works" className="hover:underline font-normal text-base leading-[100%] opacity-90">How it Works</a>
-                    <a href="#services" className="hover:underline font-normal text-base leading-[100%] opacity-90">Services</a>
-                    <a href="#testimonials" className="hover:underline font-normal text-base leading-[100%] opacity-90">Testimonials</a>
-                    <a href="#why-use" className="hover:underline font-normal text-base leading-[100%] opacity-90">Why Use</a>
-                    <a href="#faqs" className="hover:underline font-normal text-base leading-[100%] opacity-90">FAQs</a>
-                </div>
-
-
+                <img src={logo} alt="Logo" className="h-8" />
+                <nav className="hidden md:flex items-center space-x-6 text-sm">
+                    {navLinks.map((link, index) => (
+                        <a key={index} href={link.href}
+                            className="hover:underline font-normal text-base leading-[100%] opacity-90" >
+                            {link.name}
+                        </a>
+                    ))}
+                </nav>
                 <div className="hidden md:flex items-center space-x-4">
                     <Custombtn btn={
-                        <>
-                            Get Started    <Up_Arrow />
+                        <>Get Started    <Up_Arrow />
                         </>
                     } className="bg-white text-black font-bold hover:bg-black hover:text-white " />
+                </div>
+
+                <div onClick={toggleMenu} className="md:hidden cursor-pointer z-10 flex flex-col gap-1"  >
+                    <span className={`bg-white block w-6 h-1 transition-all duration-300 ${isOpen && 'rotate-45 translate-y-2' }`}></span>
+                    <span className={`block w-6 h-1 bg-white transition-all duration-300 ${isOpen && 'opacity-0'}`}></span>
+                    <span className={`block w-6 h-1 bg-white transition-all duration-300 ${isOpen && '-rotate-45 -translate-y-2'}`}></span>
                 </div>
             </div>
-            {isOpen && (
-                <div className="md:hidden flex flex-col space-y-3 px-2 text-sm bg-[#003459]/80 backdrop-blur-md  pb-4  justify-center items-center fixed inset-0  ">
-                    <a href="#" className="block hover:underline">About</a>
-                    <a href="#" className="block hover:underline">How it Works</a>
-                    <a href="#" className="block hover:underline">Services</a>
-                    <a href="#" className="block hover:underline">Testimonials</a>
-                    <a href="#" className="block hover:underline">Why Use</a>
-                    <a href="#" className="block hover:underline">FAQs</a>
-                    <Custombtn btn={
-                        <>
-                            Get Started    <Up_Arrow />
-                        </>
+            {isOpen && (<nav className="md:hidden flex flex-col space-y-3 px-4 text-sm bg-[#003459]/80 backdrop-blur-md pb-4 justify-center items-center fixed inset-0">
+                    {navLinks.map((link, index) => (
+                        <a key={index} href={link.href}
+                            className="block hover:underline text-white text-lg"
+                        >{link.name}</a>
+                    ))}
+                    <Custombtn btn={<>Get Started    <Up_Arrow /></>
                     } className="bg-white text-black font-bold hover:bg-black hover:text-white " />
-                </div>
+                </nav>
             )}
-        </nav>
+        </header>
     );
 };
 

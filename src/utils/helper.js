@@ -22,7 +22,32 @@ import phn from '../assets/images/png/phn.png';
 import eng from '../assets/images/png/e.png';
 
 
-
+export const navLinks = [
+    {
+        name: 'About',
+        href: '#about'
+    },
+    {
+        name: 'How it Works',
+        href: '#how-it-works'
+    },
+    {
+        name: 'Services',
+        href: '#services'
+    },
+    {
+        name: 'Testimonials',
+        href: '#testimonials'
+    },
+    {
+        name: 'Why Use',
+        href: '#why-use'
+    },
+    {
+        name: 'FAQs',
+        href: '#faqs'
+    },
+];
 
 export const cardLIST = [
     {
