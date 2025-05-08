@@ -16,7 +16,7 @@ const Header = () => {
         });
     }, [])
     return (
-        <section className='bg-[url(./assets/images/png/blue-img.png)] bg-cover bg-center lg:h-[810px] md:rounded-bl-[200px] h-none'>
+        <section className='bg-[url(./assets/images/png/blue-img.png)] bg-cover bg-center lg:h-[810px] md:rounded-bl-[100px] lg:rounded-bl-[200px] h-none'>
             <Navbar />
             <div className='conatiner max-w-[1140px] mx-auto flex flex-col items-center justify-center  p-4'>
                 <div className=' grid grid-cols-1 md:grid-cols-2 gap-6'>
