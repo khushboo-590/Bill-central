@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import { items } from '../utils/helper'
-import up from '../assets/images/svg/arrow.svg'
+// import up from '../assets/images/svg/arrow.svg'
 import down from '../assets/images/svg/arrow2.svg'
 import accordianImg from '../assets/images/png/accodian-img.png'
 
@@ -39,10 +39,12 @@ const Accordian = () => {
                                             {item.title}
                                         </h3>
                                     </div>
-                                    <button
-                                        onClick={() => setOpen(i)} >
-                                        {open === i ? <img src={up} className=" cursor-pointer">
-                                        </img> : <img src={down} className=" cursor-pointer "></img>}
+                                    <button onClick={() => setOpen(i)}>
+                                        <img
+                                            src={down} 
+                                            className={`cursor-pointer transition-transform duration-300 ease-in-out ${open === i ? 'rotate-180' : 'rotate-0'
+                                                }`}
+                                        />
                                     </button>
                                 </div>
                                 {open === i && item.description && (
