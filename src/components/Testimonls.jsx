@@ -14,7 +14,7 @@ const Testimonls = () => {
         <CustomHeading headClass="pb-4 text-center" headtext="Our" headSpan2="Testimonials" />
 
         <CustomContent content="Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum
-" className="max-w-[490px] text-black opacity-90 pt-4 pb-[64px] text-center" />
+" className="max-w-[490px] text-black opacity-90  text-center" />
         <div className="container max-w-[1284px] mx-auto px-5">
           <div className='pt-[62px] max-md:pt-8 relative'>
             <Swiper modules={[Autoplay, Navigation]}
