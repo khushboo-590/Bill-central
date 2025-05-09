@@ -29,7 +29,6 @@ const Utilies = () => {
                         </button>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4  col-span-2   mt-5 lg:mt-0" >
- 
                         {features.map((feature, index) => (
                             <div key={index} className="bg-white  border-1 border-gray-300 hover:shadow-xl rounded-lg p-4 md:p-6 transition">
                                 <div className="mb-4" data-aos="zoom-in">
