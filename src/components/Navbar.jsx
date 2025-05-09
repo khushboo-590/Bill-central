@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import Custombtn from './common/Custombtn';
 import logo from '../assets/images/svg/bl.svg';
-import { Up_Arrow } from '../utils/icon'
 import { navLinks } from '../utils/helper';
 
 const Navbar = () => {

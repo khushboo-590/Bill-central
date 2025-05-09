@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import Custombtn from './common/Custombtn'
-import { White_Arrow } from '../utils/icon'
 import CustomContent from './common/CustomContent'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
