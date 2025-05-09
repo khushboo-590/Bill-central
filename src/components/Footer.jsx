@@ -13,7 +13,7 @@ const Footer = () => {
             <div className=' container max-w-[1140px] mx-auto pt-[120px] md:pt-[180px] lg:pt-[234px] p-4 '>
                 <div className="flex flex-col md:flex-row justify-between gap-10 ">
                     <div className="md:w-1/2">
-                        <img src={billIcon}></img>
+                        <img src={billIcon} className='cursor-pointer'></img>
                         <CustomContent content=" Ut auctor nisi mauris eu tincidunt facilisi. Diam amet sollicitudin pretium
                         maecenas ornare lacus arcu adipiscing." className=" md:max-w-[297px] mt-7 opacity-90 text-white" />
 
@@ -53,7 +53,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className=' border-1 border-gray-500 w-full mt-[56px] opacity-90'>
-                <p className=' text-center justify-center items-center py-[20px] font-normal text-sm leading-[150%] opacity-90'>© 2024 BILL CENTRAL, Inc. All Rights Reserved.
+                <p className=' text-center justify-center items-center py-[20px] font-normal text-sm leading-[150%] opacity-90'>© 2025 BILL CENTRAL, Inc. All Rights Reserved.
                 </p>
             </div>
         </footer>

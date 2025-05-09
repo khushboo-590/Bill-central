@@ -11,17 +11,17 @@ const Testimonls = () => {
   return (
     <section id="testimonials">
       <div className='container max-w-[1240px] mx-auto flex flex-col justify-center items-center relative p-4'>
-        <h2 className='text-black font-normal text-5xl leading-[110%]'>
+        <h2 className='text-black font-normal text-3xl md:text-5xl leading-[110%]'>
           Our <span className='font-bold'>Testimonials</span>
         </h2>
         <CustomContent content="Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum
 " className="max-w-[490px] text-black opacity-90 pt-4 pb-[64px] text-center" />
         <div className="relative w-full max-w-[1240px] mx-auto">
-          <div className="swiper-button-prev-custom absolute -left-4  sm:-left-12 top-1/2 -translate-y-1/2 z-10">
+          <div className=" hidden sm:block  sm:swiper-button-prev-custom absolute -left-4  sm:-left-12 top-1/2 -translate-y-1/2 z-10 cursor-pointer">
             <img src={left} alt="prev" />
           </div>
 
-          <div className="swiper-button-next-custom absolute -right-4 xl:-right-12 top-1/2 -translate-y-1/2 z-10 rotate-180">
+          <div className=" hidden sm:block sm:swiper-button-next-custom absolute -right-4 xl:-right-12 top-1/2 -translate-y-1/2 z-10 rotate-180 cursor-pointer">
             <img src={left} alt="next"></img>
           </div>
           <Swiper modules={[Autoplay, Navigation]}
@@ -30,7 +30,7 @@ const Testimonls = () => {
               prevEl: '.swiper-button-prev-custom',
             }}
             autoplay={{
-              delay: 3000,
+              delay: 1000,
               disableOnInteraction: false,
             }}
             breakpoints={{
