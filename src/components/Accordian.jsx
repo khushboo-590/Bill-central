@@ -6,6 +6,7 @@ import { items } from '../utils/helper'
 // import up from '../assets/images/svg/arrow.svg'
 import down from '../assets/images/svg/arrow2.svg'
 import accordianImg from '../assets/images/png/accodian-img.png'
+import CustomHeading from './common/CustomHeading';
 
 
 const Accordian = () => {
@@ -24,8 +25,7 @@ const Accordian = () => {
             <div className="container max-w-[1161px] mx-auto pt-[40px] lg:pt-[162px] p-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-[73px]">
                     <div className="flex-1 ">
-                        <h2 className=" text-[30px] md:text-[48px] font-normal  leading-[110%] lg:max-w-[456px] text-transform:capitalize text-[#00171F] mb-[45px] text-center md:text-left">
-                            Comprehensive Utility <span className="font-bold ">Comparisons</span></h2>
+                        <CustomHeading headingClass="pb-11.5 lg:max-w-[558px]" headingtext="Comprehensive Utility " headingSpan2="Comparisons" />
                         {items.map((item, i) => (
                             <div
                                 key={i}

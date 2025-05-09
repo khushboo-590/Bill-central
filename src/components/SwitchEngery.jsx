@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import light from '../assets/images/png/light.png'
 import Custombtn from './common/Custombtn'
-import { White_Arrow } from '../utils/icon'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import CustomContent from './common/CustomContent';
+import CustomHeading from './common/CustomHeading';
 
 
 
@@ -24,8 +24,8 @@ const SwitchEngery = () => {
                         <img src={light} className='mx-auto'></img>
                     </div>
                     <div className='flex flex-col'>
-                        <h2 className=' text-[30px] md:text-[48px]   text-[#1E1E1E] leading-[110%] lg:max-w-[409px] text-transform: capitalize; font-bold'>Switching Energy <span className='font-normal'>Made Simple</span> </h2>
-                        <CustomContent content="Say goodbye to confusing energy plans! We simplify the process by providing clear and competitive electricity and gas recommendations. Whether you're moving or just seeking a better deal, our platform connects you with the best energy providers quickly and easily, helping you save on energy bills." className="text-[00171F] opacity-90 mt-4 lg:max-w-[558px]" />
+                        <CustomHeading headingClass="lg:max-w-[409px] text-center sm:text-left" headingSpan="Switching Energy" headingtext="Made Simple" />
+                    <CustomContent content="Say goodbye to confusing energy plans! We simplify the process by providing clear and competitive electricity and gas recommendations. Whether you're moving or just seeking a better deal, our platform connects you with the best energy providers quickly and easily, helping you save on energy bills." className="text-[00171F] opacity-90 mt-4 lg:max-w-[558px]" />
                         <p className='text-[24px] leading-[110%] font-normal text-[#003459]  mt-[38px] text-transform: capitalize '>Benefits of Comparing Energy Plans</p>
                         <ul className='list-disc mt-4 ml-7'>
                             <li className='font-normal text-base  leading-[150%] text-[#00171F] '>Save money by finding cheaper deals.</li>

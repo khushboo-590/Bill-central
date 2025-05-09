@@ -5,6 +5,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import CustomContent from './common/CustomContent';
+import CustomHeading from './common/CustomHeading';
+CustomHeading
 
 const SwitchSilder = () => {
     return (
@@ -12,8 +14,8 @@ const SwitchSilder = () => {
         <div className='max-lg:pb-[44px] pb-[30px]'>
                 <div className="2xl:container pt-[40px] md:pt-[90px] lg:pt-[162px] mx-auto">
                 <div className='flex flex-col  justify-center text-center items-center'>
-                <h2 className=' text-[30px] md:text-[48px] text-[#1E1E1E] leading-[110%]  text-transform:capitalize font-normal' > Simple Steps To < span className='font-bold' > Switch</span > </h2 >
-                    <CustomContent content="Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum" className="text-[00171F] opacity-90 mt-4 max-w-[610px] px-4"/>
+                        <CustomHeading headingClass="text-center px-3 pb-4" headingtext="Simple Steps to" headingSpan2="Switch" />
+                <CustomContent content="Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum" className="text-[00171F] opacity-90 mt-4 max-w-[610px] px-4"/>
                 </div>
                     <Swiper 
                     modules={[Autoplay]}

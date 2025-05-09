@@ -4,6 +4,7 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import { silderData } from '../utils/helper';
 import left from "../assets/images/png/left.png"
 import CustomContent from './common/CustomContent';
+import CustomHeading from './common/CustomHeading';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -11,9 +12,8 @@ const Testimonls = () => {
   return (
     <section id="testimonials">
       <div className='container max-w-[1240px] mx-auto flex flex-col justify-center items-center relative p-4'>
-        <h2 className='text-black font-normal text-3xl md:text-5xl leading-[110%]'>
-          Our <span className='font-bold'>Testimonials</span>
-        </h2>
+        <CustomHeading headingClass="pb-4 text-center" headingtext="Our" headingSpan2="Testimonials" />
+
         <CustomContent content="Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum
 " className="max-w-[490px] text-black opacity-90 pt-4 pb-[64px] text-center" />
         <div className="relative w-full max-w-[1240px] mx-auto">

@@ -2,12 +2,6 @@ import card1 from '../assets/images/png/card1.png';
 import card2 from '../assets/images/png/card2.png';
 import card3 from '../assets/images/png/card3.png';
 import card4 from '../assets/images/png/crad4.png';
-import slide1 from '../assets/images/png/silde1.png';
-import slide2 from '../assets/images/png/slide2.png';
-import slide3 from '../assets/images/png/slide-3.png';
-import slide4 from '../assets/images/png/silde4.png';
-import slide5 from '../assets/images/png/silde5.png';
-import slide6 from '../assets/images/png/silde6.png';
 import circle from '../assets/images/svg/cicle.svg';
 import clock from '../assets/images/svg/clock.svg';
 import noServices from '../assets/images/svg/cut.svg';
@@ -115,7 +109,6 @@ export const items = [
 };
 
 
-export const slides = [slide1, slide2, slide3, slide4, slide5, slide6, slide2];
 
 
 

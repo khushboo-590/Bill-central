@@ -1,8 +1,13 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import slide1 from '../assets/images/png/silde1.png';
+import slide2 from '../assets/images/png/slide2.png';
+import slide3 from '../assets/images/png/slide-3.png';
+import slide4 from '../assets/images/png/silde4.png';
+import slide5 from '../assets/images/png/silde5.png';
+import slide6 from '../assets/images/png/silde6.png';
 import { Autoplay } from 'swiper/modules';
-import { slides } from '../utils/helper'
 
 
 const Slider = () => {
@@ -29,11 +34,13 @@ const Slider = () => {
                         320: { slidesPerView: 3, spaceBetween: 10 },
                     }}
                 >
-                    {slides.map((src, index) => (
-                        <SwiperSlide key={index}>
-                            <img src={src} alt={`Slide ${index + 1}`} />
-                        </SwiperSlide>
-                    ))}
+                    <SwiperSlide><img src={slide1} alt="logo" /></SwiperSlide>
+                    <SwiperSlide><img src={slide2} alt="logo" /></SwiperSlide>
+                    <SwiperSlide><img src={slide3} alt="logo" /></SwiperSlide>
+                    <SwiperSlide><img src={slide4} alt="logo" /></SwiperSlide>
+                    <SwiperSlide><img src={slide5} alt="logo" /></SwiperSlide>
+                    <SwiperSlide><img src={slide6} alt="logo" /></SwiperSlide>
+                    <SwiperSlide><img src={slide2} alt="logo" /></SwiperSlide>
                 </Swiper>
             </div>
         </section>
