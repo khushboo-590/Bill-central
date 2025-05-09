@@ -20,7 +20,7 @@ const Header = () => {
             <Navbar />
             <div className='conatiner max-w-[1140px] mx-auto flex flex-col items-center justify-center  p-4'>
                 <div className=' grid grid-cols-1 md:grid-cols-2 gap-6'>
-                    <div className='flex flex-col  mt-[40px]  lg:mt-[122px]  '>
+                    <div className='flex flex-col  mt-[40px]  lg:mt-[122px]  mx-auto '>
                         <h1 className='text-[35px] sm:text-[50px] lg:text-[60px] font-normal text-white leading-[110%] md:max-w-[506px]'>Easily Compare <span className='font-bold'>Energy, Gas, And Internet</span> Plans</h1>
                         <CustomContent content="Find and switch to the best energy, gas, and internet plans with ease. Our platform simplifies your search, letting you compare providers and make informed decisions, all in one place." className="text-white mt-4 opacity-90"/>
                         <div className="flex items-center relative max-w-[476px] mt-[30px] md:mt-[42px]">
@@ -33,7 +33,7 @@ const Header = () => {
 
                     </div>
                     <div data-aos="zoom-in-up" className='relative z-20'>
-                        <img src={girl} alt="Header Image" className='w-full  relative z-3 mt-[30px] lg:mt-[109px]   ' /></div>
+                        <img src={girl} alt="Header Image" className='w-full  relative z-3 mt-[30px] lg:mt-[109px]  max-w-[558px] mx-auto pointer-events-none  ' /></div>
                     <img src={dots} alt="Header Image" className=' absolute right-[120px] mt-[53px] hidden xl:block z-0 ' />
 
 

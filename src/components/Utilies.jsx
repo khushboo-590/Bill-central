@@ -5,6 +5,7 @@ import arror from '../assets/images/png/arror.png'
 import CustomContent from './common/CustomContent'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import CustomHeading from './common/CustomHeading'
 const Utilies = () => {
     useEffect(() => {
         AOS.init({
@@ -15,16 +16,16 @@ const Utilies = () => {
     return (
         <section id="why-use">
             <header className='container max-w-[1140px] p-4 mx-auto flex-col flex justify-center items-center  pt-[40px] md:pt-[90px] lg:pt-[162px]'>
-                <h2 className=' text-[30px] md:text-[48px] leaading-[110%] font-normal text-tranform:capitalize text-black text-center'>Why Choose Us for <span className='font-bold'>Utilities</span></h2>
-                <CustomContent content="This emphasizes both the action and the benefits, drawing in potential customers with a clear value proposition. Let me know if you'd like any adjustments!" className="max-w-[620px] text-black opacity-90 text-center pt-4  " />
+                <CustomHeading headingClass="text-center " headingtext="Why Choose Us for " headingSpan2="Utilities" />
+            <CustomContent content="This emphasizes both the action and the benefits, drawing in potential customers with a clear value proposition. Let me know if you'd like any adjustments!" className="max-w-[620px] text-black opacity-90 text-center pt-4  " />
                 <div className="lg:grid lg:grid-cols-3 bg-white   mt-[58px] md:gap-6  mb-[40px] lg:mb-[162px] gap-0 " >
-                    <div className="bg-[#003459] text-white p-3 md:p-6 flex flex-col justify-center lg:items-start space-y-4 rounded-[4px] w-full h-[400px] lg:h-[596px] lg:max-w-[424px] mx-auto items-center hover:scale-102 transition-all duration-200 ease-linear">
+                    <div className="bg-[#003459] text-white p-3 md:p-6 flex flex-col justify-center lg:items-start space-y-4  w-full h-[400px] lg:h-[596px] lg:max-w-[424px] mx-auto items-center hover:scale-103 transition-all duration-200 ease-linear rounded">
                         <img src={thumps} className=' w-[100px]  md:w-[180px] lg:w-[232px]'></img>
                         <h2 className="text-[24px] font-normal leading-[110%] pt-1 lg:pt-[30px]">Tailored Recommendations</h2>
                         <p className="text-base opacity-90 leading-[150%] font-normal md:pt-[10px] lg:max-w-[344px] lg:text-left  text-center">
                             Our platform analyzes your unique energy needs and preferences to suggest the best utility providers, ensuring you get the most personalized options available.
                         </p>
-                        <button className="lg:mt-[22px] bg-white text-blue-900 px-6 py-3 rounded-full hover:bg-gray-200 transition mb-1">
+                        <button className="lg:mt-[22px] bg-white text-blue-900 px-6 py-3 rounded-full hover:bg-gray-200 transition-all duration-200 ease-linear mb-1">
                             <a href="#"> <img src={arror} className='cursor-pointer'></img></a>
                         </button>
                     </div>
