@@ -3,7 +3,6 @@ import Navbar from './Navbar'
 import girl from '../assets/images/png/girl.png'
 import dots from '../assets/images/svg/dots.svg'
 import Custombtn from './common/Custombtn'
-// import { White_Arrow } from '../utils/icon'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import CustomContent from './common/CustomContent'

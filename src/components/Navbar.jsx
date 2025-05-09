@@ -49,8 +49,8 @@ const Navbar = () => {
                             className="block hover:underline text-white text-lg"
                         >{link.name}</a>
                     ))}
-                    <Custombtn btn={<>Get Started    <Up_Arrow /></>
-                    } className="bg-white text-black font-bold hover:bg-black hover:text-white " />
+                    <Custombtn btn="Get Started "
+                    className="bg-white text-black font-bold hover:bg-black hover:text-white " />
                 </nav>
             )}
         </header>

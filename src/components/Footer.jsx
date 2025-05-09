@@ -20,10 +20,10 @@ const Footer = () => {
                         <div>
                             <h4 className="font-bold mb-2 text-xl leading-[110%] mt-9">Follow Us</h4>
                             <div className="flex space-x-4 mt-4">
-                                <img src={iniIcon} className='hover:transform hover:scale-125 transition duration-300'></img>
-                                <img src={faceIcon} className='hover:transform hover:scale-125 transition duration-300'></img>
-                                <img src={cemraIcon} className='hover:transform hover:scale-125 transition duration-300'></img>
-                                <img src={xIcon} className='hover:transform hover:scale-125 transition duration-300'></img>
+                                <a href="#"><img src={iniIcon} className='hover:transform hover:scale-125 transition duration-300'></img></a>
+                                <a href="#"> <img src={faceIcon} className='hover:transform hover:scale-125 transition duration-300'></img></a>
+                                <a href="#"> <img src={cemraIcon} className='hover:transform hover:scale-125 transition duration-300'></img></a>
+                                <a href="#"><img src={xIcon} className='hover:transform hover:scale-125 transition duration-300'></img></a>
 
                             </div>
                         </div>

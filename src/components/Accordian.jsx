@@ -16,8 +16,8 @@ const Accordian = () => {
             duration: 3000,
             once: true,
         });
-                AOS.refresh();
-        
+        AOS.refresh();
+
     }, []);
     return (
         <section id="services">

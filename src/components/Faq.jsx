@@ -33,7 +33,7 @@ const Faq = () => {
                         {FaqData.map((item, index) => (
                             <div
                                 key={index}
-                                className={`  shadow-lg rounded ${openIndex === index ? "bg-[#003459] text-white" : "bg-white text-black"}`}>
+                                className={`shadow-lg rounded ${openIndex === index ? "bg-[#003459] text-white" : "bg-white text-black"}`}>
                                 <button onClick={() => toggleFAQ(index)} className="w-full text-left  p-[24px] flex justify-between items-center">
                                     <span className=" text-xl md:text-2xl leading-[110%] font-normal ">{item.question}</span>
                                     {openIndex === index ? <img src={minus} alt="Collapse" className="transition-transform duration-300 transform " /> : <img src={plus} alt="Expand" className="transition-transform duration-300 transform " />}
