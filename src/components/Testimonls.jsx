@@ -11,7 +11,7 @@ const Testimonls = () => {
   return (
     <section id="testimonials">
       <div className='container max-w-[1240px] mx-auto flex flex-col justify-center items-center relative p-4'>
-        <CustomHeading headingClass="pb-4 text-center" headingtext="Our" headingSpan2="Testimonials" />
+        <CustomHeading headClass="pb-4 text-center" headtext="Our" headSpan2="Testimonials" />
 
         <CustomContent content="Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum
 " className="max-w-[490px] text-black opacity-90 pt-4 pb-[64px] text-center" />

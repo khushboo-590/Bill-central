@@ -25,7 +25,7 @@ const Header = () => {
                         <CustomContent content="Find and switch to the best energy, gas, and internet plans with ease. Our platform simplifies your search, letting you compare providers and make informed decisions, all in one place." className="text-white mt-4 opacity-90"/>
                         <div className="flex items-center relative max-w-[476px] mt-[30px] md:mt-[42px]">
                             <CustomInput type="text" placeholder="Start typing your address" />
-                            <Custombtn btnClass="absolute z-2 right-[10px]" btnText="Compare" whiteArrow={<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <Custombtn btnClass="absolute z-2 right-[10px]" btnText="Compare" whitesvg={<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 14.3691L14 1.36914M14 1.36914V13.8491M14 1.36914H1.52" stroke="white" stroke-width="1.93338" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                             } />

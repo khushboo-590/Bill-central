@@ -24,7 +24,7 @@ const SwitchEngery = () => {
                         <img src={light} className='mx-auto'></img>
                     </div>
                     <div className='flex flex-col'>
-                        <CustomHeading headingClass="lg:max-w-[409px] text-center sm:text-left" headingSpan="Switching Energy" headingtext="Made Simple" />
+                        <CustomHeading headClass="lg:max-w-[409px] text-center sm:text-left" headSpan="Switching Energy" headtext="Made Simple" />
                     <CustomContent content="Say goodbye to confusing energy plans! We simplify the process by providing clear and competitive electricity and gas recommendations. Whether you're moving or just seeking a better deal, our platform connects you with the best energy providers quickly and easily, helping you save on energy bills." className="text-[00171F] opacity-90 mt-4 lg:max-w-[558px]" />
                         <p className='text-[24px] leading-[110%] font-normal text-[#003459]  mt-[38px] text-transform: capitalize '>Benefits of Comparing Energy Plans</p>
                         <ul className='list-disc mt-4 ml-7'>

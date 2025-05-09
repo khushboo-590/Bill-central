@@ -16,7 +16,7 @@ const Utilies = () => {
     return (
         <section id="why-use">
             <header className='container max-w-[1140px] p-4 mx-auto flex-col flex justify-center items-center  pt-[40px] md:pt-[90px] lg:pt-[162px]'>
-                <CustomHeading headingClass="text-center " headingtext="Why Choose Us for " headingSpan2="Utilities" />
+                <CustomHeading headClass="text-center " headtext="Why Choose Us for " headSpan2="Utilities" />
             <CustomContent content="This emphasizes both the action and the benefits, drawing in potential customers with a clear value proposition. Let me know if you'd like any adjustments!" className="max-w-[620px] text-black opacity-90 text-center pt-4  " />
                 <div className="lg:grid lg:grid-cols-3 bg-white   mt-[58px] md:gap-6  mb-[40px] lg:mb-[162px] gap-0 " >
                     <div className="bg-[#003459] text-white p-3 md:p-6 flex flex-col justify-center lg:items-start space-y-4  w-full h-[400px] lg:h-[596px] lg:max-w-[424px] mx-auto items-center hover:scale-103 transition-all duration-200 ease-linear rounded">
