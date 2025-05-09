@@ -24,7 +24,7 @@ const Accordian = () => {
             <div className="container max-w-[1161px] mx-auto pt-[40px] lg:pt-[162px] p-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-[73px]">
                     <div className="flex-1 ">
-                        <CustomHeading headingClass="pb-11.5 lg:max-w-[558px]" headingtext="Comprehensive Utility " headingSpan2="Comparisons" />
+                        <CustomHeading headingClass="pb-11.5 lg:max-w-[558px] md:text-left text-center" headingtext="Comprehensive Utility " headingSpan2="Comparisons" />
                         {items.map((item,index ) => (
                             <div
                                 className="border border-gray-200 rounded mb-[30px] p-[14px] cursor-pointer bg-white  hover:shadow-md w-full lg:max-w-[578px]"
