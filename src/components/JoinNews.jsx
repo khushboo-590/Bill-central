@@ -26,10 +26,10 @@ const JoinNews = () => {
                             placeholder="Email your email"
                             className="w-full px-[22px] py-[24px] rounded-[0px_100px_100px_50px] border border-gray-300 text-gray-500 text-base font-normal leading-[17.6px] bg-white"
                         />
-                        <Custombtn
-                            btn="submit "
-                            className="absolute top-1/2 -translate-y-1/2 right-[22px]  sm:right-[10px] text-white font-bold bg-[#007EA7]  hover:border-1 border-[#007EA7] hover:bg-white hover:text-[#007EA7] "
-                        />
+                        <Custombtn btnClass="bg-[#007EA7] absolute z-2 right-[10px]" btnText="Submit" whiteArrow={<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 14.3691L14 1.36914M14 1.36914V13.8491M14 1.36914H1.52" stroke="white" stroke-width="1.93338" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        } />
                     </label>
 
                 </div>

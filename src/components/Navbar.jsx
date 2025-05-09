@@ -32,9 +32,14 @@ const Navbar = () => {
                     ))}
                 </nav>
                 <div className="hidden lg:flex items-center space-x-4">
-                    <Custombtn btn=
+                    <Custombtn btnClass="bg-white !text-[#00171F]" btnText="Get Started" blackArrow={<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 14.3691L14 1.36914M14 1.36914V13.8491M14 1.36914H1.52" stroke="#00171F" stroke-width="1.93338" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    } />
+                    {/* <Custombtn btn=
                         "Get Started"
-                     className="bg-white text-black font-bold hover:bg-black hover:text-white " />
+                     className="bg-white text-black font-bold hover:bg-black hover:text-white " /> */}
+                    
                 </div>
 
                 <div onClick={toggleMenu} className="lg:hidden cursor-pointer z-10 flex flex-col gap-1"  >

@@ -1,15 +1,10 @@
 import React from 'react'
-import { White_Arrow } from '../../utils/icon'
 
 
-const Custombtn = ({ btn,className }) => {
+const Custombtn = ({ btnText, btnClass, whiteArrow, blackArrow }) => {
   return (
-    <button
-      className={`cursor-pointer text-[16px] leading-[100%] py-[15px] px-[20px]  max-w-[154px]
-      rounded-[0px_100px_100px_70px] flex items-center justify-center  ${className}`} >
-      {btn} <White_Arrow />
-    </button>
-                      
+    <button className={`flex items-center outline-0 gap-2  font-family-primary font-bold text-base leading-[100%] capitalize text-white py-4 px-5 rounded-bl-[45px] rounded-tr-[50px] rounded-br-[50px] transition-all duration-700 ease-in-out bg-[#00A8E8] cursor-pointer hover:scale-105 group ${btnClass}`}>{btnText} <span className="transform transition-transform duration-300 group-hover:translate-x-1" >{whiteArrow}</span> <span className="transform transition-transform duration-300 group-hover:translate-x-1">{blackArrow}</span> </button>
+    
   );
 };
 
