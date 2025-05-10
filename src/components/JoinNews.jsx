@@ -18,7 +18,7 @@ const JoinNews = () => {
         <div data-aos="fade-up-right" >
             <div className="bg-[url(./assets/images/png/news.png)]  translate-y-[20%] transform lg:translate-y-[50%] p-4 container max-w-[1140px] mx-auto ">
                 <div className=' max-w-[620px] flex flex-col justify-center items-center mx-auto '>
-                    <CustomHeading headClass="text-center pb-4 pt-4" headtext="Join Our" headSpan2="Newsletter" />
+                    <CustomHeading headClass="text-center  pt-8" headtext="Join Our" headSpan2="Newsletter" />
                     <CustomContent content="Stay up to date with the latest deals, energy-saving tips, and exclusive offers! Sign up for our newsletter and never miss out on great savings opportunities again." className="pt-4 text-[#00171F] opacity-90 pb-[38px] text-center" /></div>
                 <div className="flex items-center relative max-w-[476px] mx-auto mb-[30px] md:mb-[50px]">
                     <CustomInput type="email" placeholder="Enter your email" inputClass="pr-[160px]" />

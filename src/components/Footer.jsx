@@ -10,7 +10,7 @@ import CustomContent from './common/CustomContent'
 const Footer = () => {
     return (
         <footer className="bg-[url(./assets/images/png/Footer.png)] bg-cover bg-center text-white " >
-            <div className=' container max-w-[1140px] mx-auto pt-[120px] md:pt-[180px] lg:pt-[234px] p-4 '>
+            <div className=' container max-w-[1140px] mx-auto pt-[120px] md:pt-[180px] lg:pt-[234px] p-2 '>
                 <div className="flex flex-col md:flex-row justify-between gap-10 ">
                     <div className="md:w-1/2">
                         <img src={billIcon} className='cursor-pointer'></img>
@@ -52,10 +52,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className=' border-1 border-gray-500 w-full mt-[56px] opacity-90'>
+            <div className=' border-1 border-gray-500 w-full mt-[56px] opacity-90  '></div>
                 <p className=' text-center justify-center items-center py-[20px] font-normal text-sm leading-[150%] opacity-90'>© 2025 BILL CENTRAL, Inc. All Rights Reserved.
                 </p>
-            </div>
         </footer>
     )
 }

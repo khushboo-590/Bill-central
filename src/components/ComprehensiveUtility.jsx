@@ -7,7 +7,7 @@ import down from '../assets/images/svg/arrow2.svg'
 import accordianImg from '../assets/images/png/accodian-img.png'
 import CustomHeading from './common/CustomHeading';
 
-const Accordian = () => {
+const ComprehensiveUtility = () => {
     const [openAccordian, setOpenAccordian] = useState(null);
     const toggle = (index) =>
         setOpenAccordian(openAccordian === index ? null : index);
@@ -54,7 +54,7 @@ const Accordian = () => {
                                     <button onClick={() => setOpenAccordian(index)}>
                                         <img
                                             src={down}
-                                            className={`cursor-pointer transition-transform duration-500 ease-in-out
+                                            className={`cursor-pointer transition-transform duration-700 ease-in-out
     ${openAccordian === index ? 'rotate-[180deg]' : 'rotate-0'}
   `}
                                         />
@@ -83,7 +83,7 @@ const Accordian = () => {
     )
 }
 
-export default Accordian
+export default ComprehensiveUtility
 
 
 

@@ -4,7 +4,7 @@ import Header from './components/Header'
 import Slider from './components/Slider'
 import SwitchEngery from './components/SwitchEngery'
 import SwitchSilder from './components/SwitchSilder'
-import Accordian from './components/Accordian'
+import ComprehensiveUtility from './components/ComprehensiveUtility'
 import Footer from './components/Footer'
 import JoinNews from './components/JoinNews'
 import Utilies from './components/Utilies'
@@ -18,7 +18,7 @@ function App() {
       <Slider />
       <SwitchEngery />
       <SwitchSilder />
-      <Accordian />
+      <ComprehensiveUtility/>
       <Utilies />
       <Testimonls />
       <Faq/>
