@@ -25,24 +25,40 @@ const Accordian = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-[73px]">
                     <div className="flex-1 ">
                         <CustomHeading headClass="pb-11.5 lg:max-w-[558px] md:text-left text-center" headtext="Comprehensive Utility " headSpan2="Comparisons" />
-                        {items.map((item,index ) => (
+                        {items.map((item, index) => (
                             <div
                                 className="border border-gray-200 rounded mb-[30px] p-[14px] cursor-pointer bg-white  hover:shadow-md w-full lg:max-w-[578px]"
                                 onClick={() => toggle(index)}
                             >
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center gap-4">
-                                        <div className="w-16 rounded-[50px] bg-[#EAF9FF] hover:bg-[#003459] h-16 flex items-center justify-center"><img src={item.icon} className='hover:fill-white'></img></div>
+                                        <div
+                                            className={`w-16 h-16 rounded-[50px] flex items-center justify-center transition-colors duration-300 
+        ${openAccordian === index ? "bg-[#003459]" : "bg-[#EAF9FF] "}
+    `}
+                                        >
+                                            <img
+                                                src={item.icon}
+                                                alt="icon"
+                                                className={`transition-all duration-300 
+            ${openAccordian === index ? "filter brightness-0 invert" : ""} 
+            hover:filter hover:brightness-0 hover:invert
+        `}
+                                            />
+                                        </div>
+
                                         <h3 className=" text-[20px] sm:text-[24px] font-normal leading-[110%] text-[#00171F] opacity-90 max-w-[442px]">
                                             {item.title}
                                         </h3>
                                     </div>
                                     <button onClick={() => setOpenAccordian(index)}>
                                         <img
-                                            src={down} 
-                                            className={`cursor-pointer transition-transform duration-300 ease-in-out ${openAccordian === index ? 'rotate-180' : 'rotate-0'
-                                                }`}
+                                            src={down}
+                                            className={`cursor-pointer transition-transform duration-500 ease-in-out
+    ${openAccordian === index ? 'rotate-[180deg]' : 'rotate-0'}
+  `}
                                         />
+
                                     </button>
                                 </div>
                                 {openAccordian === index && item.description && (
