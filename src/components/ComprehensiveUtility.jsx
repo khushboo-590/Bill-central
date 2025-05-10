@@ -23,7 +23,7 @@ const ComprehensiveUtility = () => {
         <section id="services">
             <div className="container max-w-[1161px] mx-auto pt-[40px] lg:pt-[162px] p-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-[73px]">
-                    <div className="flex-1 ">
+                    <div className="flex-1 " data-aos=" fade-down">
                         <CustomHeading headClass="pb-11.5 lg:max-w-[558px] md:text-left text-center" headtext="Comprehensive Utility " headSpan2="Comparisons" />
                         {items.map((item, index) => (
                             <div
