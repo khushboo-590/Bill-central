@@ -18,7 +18,7 @@ const Header = () => {
     return (
         <section className='bg-[url(./assets/images/png/blue-img.png)] bg-cover bg-center lg:h-[810px] md:rounded-bl-[100px] lg:rounded-bl-[200px] h-none p-4'>
             <Navbar />
-            <div className='conatiner max-w-[1140px] mx-auto flex flex-col items-center justify-center  '>
+            <div className='conatiner max-w-[1140px] mx-auto flex flex-col items-center justify-center  ' data-aos="zoom-in-up">
                 <div className=' grid grid-cols-1 md:grid-cols-2 gap-6'>
                     <div className='flex flex-col  mt-[40px]  lg:mt-[122px]  mx-auto '>
                         <h1 className='text-[35px] sm:text-[50px] lg:text-[60px] font-normal text-white leading-[110%] md:max-w-[506px]'>Easily Compare <span className='font-bold'>Energy, Gas, And Internet</span> Plans</h1>
@@ -32,9 +32,9 @@ const Header = () => {
                         </div>
 
                     </div>
-                    <div data-aos="zoom-in-up" className='relative z-20'>
+                    <div  className='relative z-20'>
                         <img src={girl} alt="Header Image" className='w-full  relative z-3 mt-[30px] lg:mt-[109px]  max-w-[558px] mx-auto pointer-events-none  ' /></div>
-                    <img src={dots} alt="Header Image" className=' absolute right-[120px] mt-[53px] hidden xl:block z-0 ' />
+                    <img src={dots} alt="Header Image" className=' absolute right-[-60px] mt-[53px] hidden xl:block z-0 ' />
 
 
                 </div>

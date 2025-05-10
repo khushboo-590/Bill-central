@@ -3,6 +3,8 @@ import React from 'react'
 import { FaqData } from "../utils/helper";
 import minus from '../assets/images/svg/-.svg'
 import plus from '../assets/images/svg/+.svg'
+import CustomHeading from "./common/CustomHeading";
+import CustomContent from "./common/CustomContent";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
@@ -21,13 +23,12 @@ const Faq = () => {
     }, []);
     return (
         <section id="faqs">
-            <div className="container max-w-[916px]  mx-auto p-4 pt-[40px] md:pt-[90px] lg:pt-[162px]">
-                <h2 className=" text-4xl md:text-5xl font-normal text-center mb-4 leading-[110%] text-transform: capitalize">
-                    Frequently Asked <span className="font-bold">Questions</span>
-                </h2>
-                <p className="text-center text-black opacity-90 mb-6 text-base leading-[150%] max-w-[556px] mx-auto">
-                    Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum
-                </p>
+            <div className="container max-w-[916px]  mx-auto p-4 pt-[40px] md:pt-[90px] lg:pt-[162px] ">
+                <div className=" flex flex-col justify-center items-center mx-auto ">
+                <CustomHeading headClass=" text-center sm:text-left justify-center mx-auto" headtext="Frequently Asked" headSpan2="Questions" /></div>
+                <CustomContent content="Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum
+" className="text-[00171F] opacity-90 mt-4 lg:max-w-[556px] text-center mx-auto " />
+
                 <div data-aos="flip-left">
                     <div className="space-y-4 mt-[52px]">
                         {FaqData.map((item, index) => (
